@@ -163,12 +163,6 @@ body {
     grid-area: 1/1;
 }
 
-.anim-3 {
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-}
-
 .en-text {
 	-webkit-font-feature-settings: 'ss00';
 	font-feature-settings: 'ss00';
@@ -219,4 +213,9 @@ picture {
 ::selection {
 	background: var(--color-alt) !important;
 	color: var(--color-main) !important;
+}
+
+/* HEADER */
+.main-header {
+	background: #263238;
 }
