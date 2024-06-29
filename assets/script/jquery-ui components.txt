@@ -1,0 +1,19 @@
+This jquery-ui v1.13.2 have these components.
+
+>Core
++Widget
++Position
++Form Reset Mixin
++Keycode
++labels
++uniqueId
+
+>Widgets
++Menu
++Mouse
++Selectmenu
++Slider
+
+if you need more components, please redownload jquery-ui with more components and update this text file accordingly.
+
+https://jqueryui.com/download/
