@@ -194,6 +194,7 @@ picture {
     /* outline: 1px solid pink !important; */
 }
 
+/* COLOR VARIABLES */
 :root {
     --color-main: #12283d;
     --color-alt: #ff7300;
@@ -218,4 +219,43 @@ picture {
 /* HEADER */
 .main-header {
 	background: #263238;
+}
+
+/* MAIN NAV */
+.main-nav .nav-link {
+	color: #fff;
+	font-weight: 300;
+	position: relative;
+	text-align: center;
+}
+
+.main-nav .nav-link:hover {
+	color: var(--color-alt);
+	/* font-weight: bold; */
+	/* letter-spacing: -.55px; */
+	text-shadow: 0 0 1px var(--color-alt), 0 0 1px var(--color-alt);
+	/* -webkit-text-stroke: 1px var(--color-alt); */
+}
+
+.main-nav .nav-item:not(:last-child) .nav-link::after {
+	content: '';
+	height: 10px;
+	border-left: 2px solid var(--color-alt);
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+
+/* HEADER CALL TO ACTIONS */
+.header-cta-list .nav-link {
+	color: #fff;
+	font-weight: normal;
+}
+
+.header-cta-list .nav-link:hover {
+	color: var(--color-alt);
+}
+
+.header-login-btn span {
+	color: var(--color-alt);
 }

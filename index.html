@@ -15,11 +15,11 @@
     </head>
     <body>
         <header class="main-header sticky-top">
-            <section class="container-fluid gx-5">
+            <section class="container-fluid gx-5 ps-5 pe-5">
 
-                <div class="d-flex align-items-bottom position-relative">
+                <div class="header-box d-flex align-items-center py-2">
                     <!-- MAIN NAV -->
-                    <nav class="main-nav navbar navbar-dark navbar-expand flex-1">
+                    <nav class="main-nav navbar navbar-dark navbar-expand flex-1" aria-label="main menu">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="/">صفحه اصلی</a></li>
                             <li class="nav-item"><a class="nav-link" href="/category.html">محصولات</a></li>
@@ -33,16 +33,38 @@
                     <!-- LOGO -->
                     <div class="main-logo">
                         <a href="/">
-                        <img src="./assets/images/ecut-logo.png" width="100" alt="فروشگاه آنلاین ایکات">
+                            <img src="./assets/images/ecut-logo.png" width="100" alt="فروشگاه آنلاین ایکات">
                         </a>
                     </div>
 
-                    <div class="flex-1">
+                    <!-- HEADER CALL TO ACTIONS -->
+                    <nav class="navbar navbar-dark navbar-expand flex-1 justify-content-end" aria-label="call to actions">
+                        <ul class="header-cta-list navbar-nav">
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link header-search-btn eico-search" href="#" aria-label="search"></a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link header-login-btn" href="./login.html">ورود <span>|</span> ثبت نام</a>
+                            </li>
 
-                    </div>
+                            <li class="nav-item d-lg-none">
+                                <a class="nav-link"  href="#" aria-label="user">
+                                    <i class="eico-user-circle"></i>
+                                </a>
+                            </li>
 
-                </div>
+                            <li class="nav-item">
+                                <a class="nav-link header-cart-btn eico-shop-bag" href="#">
+                                    <span class="cart-quantity">99</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div> <!-- end of header box -->
             </section>
+
+
         </header>
     </body>
 </html>
