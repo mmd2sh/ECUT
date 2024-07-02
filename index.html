@@ -3,14 +3,15 @@
     <head>
         <title>فروشگاه آنلاین ایکات</title>
 
-        <module-include file="./head.html"></module-include>
+        <module-inject file="./head.html"></module-inject>
 
         <link href="./assets/style/home.css?v=ADD_VERSION" rel="stylesheet">
     </head>
     <body>
-        <module-include file="./header.html"></module-include>
+        <module-inject file="./header.html"></module-inject>
 
         <script>
+            
             // MAKE PAGE MODULAR
             async function injectHTML(file, el) {
                 try {
@@ -24,7 +25,7 @@
                 }
             }
 
-            document.querySelectorAll('module-include').forEach(function(module) {
+            document.querySelectorAll('module-inject').forEach(function(module) {
                 injectHTML(module.getAttribute('file'), module);
             });
         </script>

@@ -352,3 +352,44 @@ picture {
 .nav-ecut-card-fig img {
 	width: 230px;
 }
+
+/* SIMPLE PRODUCT BOX */
+.product-simple-item {
+	max-width: 408px;
+}
+
+.megamenu-products .product-simple-item {
+    max-width: 250px;
+}
+
+.product-simple-alt-img {
+    -webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	opacity: 0;
+}
+
+.product-simple-item:hover .product-simple-alt-img {
+    opacity: 1;
+}
+
+.product-simple-dets {
+    /* container-type: size; */
+}
+
+.product-simple-title {
+    color: #000;
+    font-size: clamp(13px, 3vw, 18px);
+    font-size: clamp(13px, 4.4cqw, 18px);
+    font-weight: 300;
+    -webkit-font-feature-settings: 'ss00';
+    font-feature-settings: 'ss00';
+}
+
+.product-simple-price {
+	color: #000;
+	text-align: end;
+    font-size: clamp(13px, 3vw, 18px);
+    font-size: clamp(13px, 4.4cqw, 18px);
+	font-weight: bold;
+}
