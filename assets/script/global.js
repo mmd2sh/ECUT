@@ -20,4 +20,27 @@ $(document).ready(function() {
         });
     });
 
+    // initiate bootstrap tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // PRODUCT FAVORITE TOGGLE
+    $('[class*=cta-item] [class*=eico-favorite]').on('click', function(ev) {
+        var favBtn = $(this);
+        ev.preventDefault();
+        favBtn.toggleClass('eico-favorite eico-favorite-fill'); // <- comment this line when you using following functions 
+
+        // functions for ajax
+        function addFav() {
+            favBtn.addClass('eico-favorite-fill');
+            favBtn.removeClass('eico-favorite');
+        }
+
+        function remFav() {
+            favBtn.removeClass('eico-favorite-fill');
+            favBtn.addClass('eico-favorite');
+        }
+
+        this.blur();
+    });
+    
 }); // doc ready end
