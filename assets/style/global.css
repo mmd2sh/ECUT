@@ -247,11 +247,13 @@ picture {
     perspective-origin: top;
 }
 
-[data-megamenu]:hover {
+[data-megamenu]:hover,
+[data-megamenu].nav-active {
 	z-index: 1;
 }
 
-[data-megamenu]:hover::before {
+[data-megamenu]:hover::before,
+[data-megamenu].nav-active::before {
 	content: '' !important;
 	display: block;
     width: 100%;

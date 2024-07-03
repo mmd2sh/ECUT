@@ -4,18 +4,22 @@ $(document).ready(function() {
 
     // MARK: MEGAMENU ACTIVATOR
     $('[data-megamenu]:not([data-megamenu=""])').each(function() {
-        let target = $(this).attr('data-megamenu');
+        let navLink = this;
+        let target = $(navLink).attr('data-megamenu');
         
-        $(this).hover(function() {
+        $(navLink).hover(function() {
+            $(navLink).addClass('nav-active');
             $(target).addClass('nav-active');
         }, function(/*unhover*/) {
 
             if (!$(target).is(':hover')) {
+                $(navLink).removeClass('nav-active');
                 $(target).removeClass('nav-active');
             }
         });
 
         $(target).hover(function() {}, function(/*unhover*/) {
+            $(navLink).removeClass('nav-active');
             $(target).removeClass('nav-active');
         });
     });
