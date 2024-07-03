@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-    // MEGAMENU ACTIVATOR
+    // MARK: MEGAMENU ACTIVATOR
     $('[data-megamenu]:not([data-megamenu=""])').each(function() {
         let target = $(this).attr('data-megamenu');
         
@@ -20,10 +20,10 @@ $(document).ready(function() {
         });
     });
 
-    // initiate bootstrap tooltip
+    // MARK: initiate bootstrap tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
-    // PRODUCT FAVORITE TOGGLE
+    // MARK: PRODUCT FAVORITE TOGGLE
     $('[class*=cta-item] [class*=eico-favorite]').on('click', function(ev) {
         var favBtn = $(this);
         ev.preventDefault();

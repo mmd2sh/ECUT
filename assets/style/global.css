@@ -121,7 +121,7 @@
 .eico-close:before { content: '\e824'; } /* 'î ¤' */
 .eico-close-circle:before { content: '\e825'; } /* 'î ¥' */
 
-/* GENERAL */
+/* MARK: GENERAL */
 body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -195,7 +195,7 @@ picture {
     /* outline: 1px solid pink !important; */
 }
 
-/* COLOR VARIABLES */
+/* MARK: COLOR VARIABLES */
 :root {
     --color-main: #12283d;
     --color-alt: #ff7300;
@@ -217,17 +217,18 @@ picture {
 	color: var(--color-main) !important;
 }
 
-/* HEADER */
+/* MARK: HEADER */
 .main-header {
 	background: #263238;
 }
 
-/* MAIN NAV */
+/* MARK: MAIN NAV */
 .main-nav .nav-link {
 	color: #fff;
 	font-weight: 300;
 	position: relative;
 	text-align: center;
+	padding: 5px 10px;
 }
 
 .main-nav .nav-link:hover {
@@ -239,15 +240,30 @@ picture {
 }
 
 [data-megamenu] {
-	position: relative;
+    position: relative;
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    -webkit-perspective-origin: top;
+    perspective-origin: top;
+}
+
+[data-megamenu]:hover {
+	z-index: 1;
 }
 
 [data-megamenu]:hover::before {
 	content: '' !important;
 	display: block;
-	width: 100%;
-	height: 100% !important;
+    width: 100%;
+    height: 150% !important;
+    /* background: red; */
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform: rotateX(45deg);
+    transform: rotateX(45deg);
 	position: absolute;
+	z-index: -1;
 	top: 100% !important;
 	right: 0;
 }
@@ -257,18 +273,14 @@ picture {
 	height: 10px;
 	border-left: 2px solid var(--color-alt);
 	position: absolute;
-	top: 15px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	top: 50%;
 	left: 0;
 }
 
-.main-nav .megamenu {
-	width: 100vw;
-	background: red;
-	position: absolute;
-	right: 0;
-}
-
-/* MEGAMENU */
+/* MARK: MEGAMENU */
 .category-megamenu {
 	width: 100%;
 	background: #fff;
@@ -278,10 +290,11 @@ picture {
 	transform: scaleX(.98) translateY(10px);
 	-webkit-box-shadow: 0 999px 0 999px rgb(0 0 0 / 50%);
 	box-shadow: 0 999px 0 999px rgb(0 0 0 / 50%);
-    pointer-events: none;
+	pointer-events: none;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
+	z-index: 1;
 	opacity: 0;
 	top: 100%;
 	right: 0;
@@ -326,7 +339,7 @@ picture {
 	font-weight: bold;
 }
 
-/* HEADER CALL TO ACTIONS */
+/* MARK: HEADER CALL TO ACTIONS */
 .header-cta-list .nav-link {
 	color: #fff;
 	font-weight: normal;
@@ -355,7 +368,7 @@ picture {
 	width: 230px;
 }
 
-/* SIMPLE PRODUCT BOX */
+/* MARK: PRODUCT SIMPLE BOX */
 .product-simple-item {
     width: 100%;
 	max-width: 408px;
