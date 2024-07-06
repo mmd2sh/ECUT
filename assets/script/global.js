@@ -46,5 +46,39 @@ $(document).ready(function() {
 
         this.blur();
     });
+
+    // MARK: CATEGORY SLIDER
+    $('[category-slider]').each(function(i, link) {
+        let name = $(link).attr('category-slider');
+        let products = $('.megamenu-products');
+        
+        if (name != '') {
+            $(link).on('click', function(ev) {
+                ev.preventDefault();
+                var slider = $(`[category-slider-item=${name}]`);
+                slider.toggleClass('active');
+    
+                if (slider.is('.active')) {
+                    slider.siblings().removeClass('active');
+                }
+
+                if ($('.category-slider-item').is('.active')) {
+                    products.removeClass('active');
+                } else {
+                    products.addClass('active');
+                }
+            });
+        }
+    });
+    // initiate sliders
+    $('.category-slider-item > .swiper').each(function() {
+        new Swiper(this, {
+            autoHeight: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        });
+    });
     
 }); // doc ready end

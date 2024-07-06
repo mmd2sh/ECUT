@@ -20,10 +20,10 @@
 
                         <!-- MARK: CATEGORY MENU -->
                         <nav class="category-nav" aria-label="category menu">
-                            <ul class="category-list d-flex flex-wrap justify-content-between gap-5 row-gap-4 p-4 list-unstyled">
+                            <ul class="category-list d-flex flex-wrap justify-content-between gap-5 row-gap-4 p-4 pb-2 list-unstyled">
 
                                 <li class="category-item">
-                                    <a href="./category.html" target="_blank">کلاسیک</a>
+                                    <a href="./category.html" target="_blank" category-slider="classic">کلاسیک</a>
                                     <ul class="category-sublist list-unstyled">
                                         <li class="category-item"><a href="./category.html" target="_blank">کت و شلوار</a></li>
                                         <li class="category-item"><a href="./category.html" target="_blank">دامادی</a></li>
@@ -34,7 +34,7 @@
                                 </li>
 
                                 <li class="category-item">
-                                    <a href="./category.html" target="_blank">کژوال</a>
+                                    <a href="./category.html" target="_blank" category-slider="casual">کژوال</a>
                                     <ul class="category-sublist list-unstyled">
                                         <li class="category-item"><a href="./category.html" target="_blank">کت تک</a></li>
                                         <li class="category-item"><a href="./category.html" target="_blank">پیراهن</a></li>
@@ -45,7 +45,7 @@
                                 </li>
 
                                 <li class="category-item">
-                                    <a href="./category.html" target="_blank">کفش</a>
+                                    <a href="./category.html" target="_blank" category-slider="shoe">کفش</a>
                                     <ul class="category-sublist list-unstyled">
                                         <li class="category-item"><a href="./category.html" target="_blank">کلاسیک</a></li>
                                         <li class="category-item"><a href="./category.html" target="_blank">کژوال</a></li>
@@ -57,7 +57,7 @@
                                 </li>
 
                                 <li class="category-item">
-                                    <a href="./category.html" target="_blank">کالای فصلی</a>
+                                    <a href="./category.html" target="_blank" category-slider="seasonal">کالای فصلی</a>
                                     <ul class="category-sublist list-unstyled">
                                         <li class="category-item"><a href="./category.html" target="_blank">پالتو</a></li>
                                         <li class="category-item"><a href="./category.html" target="_blank">ژاکت</a></li>
@@ -71,7 +71,7 @@
                                 </li>
 
                                 <li class="category-item">
-                                    <a href="./category.html" target="_blank">ورزشی</a>
+                                    <a href="./category.html" target="_blank" category-slider="sports">ورزشی</a>
                                     <ul class="category-sublist list-unstyled">
                                         <li class="category-item"><a href="./category.html" target="_blank">دورس یقه گرد</a></li>
                                         <li class="category-item"><a href="./category.html" target="_blank">هودی با شلوار</a></li>
@@ -85,20 +85,20 @@
                             </ul>
                         </nav>
 
-                        <ul class="d-flex flex-wrap gap-3 p-4 pt-0 list-unstyled">
+                        <ul class="d-flex flex-wrap gap-3 px-4 pb-2 pt-0 list-unstyled">
                             <li class="nav-ecut-card-wrap">
                                 <h5 class="nav-ecut-card-title">ایکات کارت</h5>
                                 <a href="#" target="_blank">
                                     <figure class="nav-ecut-card-fig">
-                                        <img src="./assets/images/gift-card.jpg" width="233" alt="ایکات کارت">
+                                        <img src="./assets/images/gift-card.jpg" loading="lazy" width="233" alt="ایکات کارت">
                                     </figure>
                                 </a>
                             </li>
                         </ul>
 
                     </li>
-                    <li class="col-4">
-                        <div class="megamenu-products py-5 p-4">
+                    <li class="col-4 p-0 position-relative">
+                        <div class="megamenu-products active py-5 p-4 pb-2">
                             <ul class="products-simple-list d-flex justify-content-between gap-4 list-unstyled">
 
                                 <li class="product-simple-item">
@@ -174,6 +174,150 @@
                                 </li><!-- end of product item -->
                             </ul>
                         </div>
+
+                        <ol class="category-slider-wrap list-unstyled">
+
+                            <li class="category-slider-item list-unstyled" category-slider-item="classic">
+                                <section class="swiper">
+                                    <ul class="swiper-wrapper list-unstyled">
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat01.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat02.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </section>
+                            </li> <!-- end category slider item -->
+
+                            <li class="category-slider-item list-unstyled" category-slider-item="casual">
+                                <section class="swiper">
+                                    <ul class="swiper-wrapper list-unstyled">
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat03.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat04.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </section>
+                            </li> <!-- end category slider item -->
+
+                            <li class="category-slider-item list-unstyled" category-slider-item="shoe">
+                                <section class="swiper">
+                                    <ul class="swiper-wrapper list-unstyled">
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat05.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat06.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </section>
+                            </li> <!-- end category slider item -->
+
+                            <li class="category-slider-item list-unstyled" category-slider-item="seasonal">
+                                <section class="swiper">
+                                    <ul class="swiper-wrapper list-unstyled">
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat07.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat08.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </section>
+                            </li> <!-- end category slider item -->
+
+                            <li class="category-slider-item list-unstyled" category-slider-item="sports">
+                                <section class="swiper">
+                                    <ul class="swiper-wrapper list-unstyled">
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat09.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <figure class="category-slider-fig m-0 ratio ratio-4x3">
+                                                <img src="./assets/images/category/cat10.jpg" loading="lazy" alt="">
+                                            </figure>
+                                            <div class="category-slider-dets">
+                                                <h5 class="category-slider-title">2024</h5>
+                                                <p class="category-slider-text">New Collection loafer shoes</p>
+                                                <a class="category-slider-more" href="#" target="_blank">Explore</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </section>
+                            </li> <!-- end category slider item -->
+
+                        </ol>
                     </li>
                 </ol>
             </section>
