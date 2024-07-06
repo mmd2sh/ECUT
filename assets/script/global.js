@@ -21,6 +21,8 @@ $(document).ready(function() {
         $(target).hover(function() {}, function(/*unhover*/) {
             $(navLink).removeClass('nav-active');
             $(target).removeClass('nav-active');
+            $('.category-slider-item').removeClass('active');
+            $('.megamenu-products').addClass('active');
         });
     });
 

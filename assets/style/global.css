@@ -355,6 +355,18 @@ picture {
 	color: var(--color-alt);
 }
 
+.cart-quantity {
+	width: 14px;
+	height: 14px;
+	text-align: center;
+	font-size: 10px;
+	border-radius: 50%;
+	background: var(--color-alt);
+	position: absolute;
+	bottom: 16px;
+	left: 1px;
+}
+
 /* MEGAMENU ECUT CARD */
 .nav-ecut-card-title {
 	color: #676767;
