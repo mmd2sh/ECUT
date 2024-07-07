@@ -11,12 +11,76 @@
         <module-inject file="./header.html"></module-inject>
 
         <main class="home-page">
+            <!-- MARK: MAIN BANNER -->
             <div class="main-banner text-center">
                 <picture>
                     <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
                     <img src="./assets/images/silder/slide01.jpg" alt="فروشگاه آنلاین ایکات">
                 </picture>
             </div>
+
+            <!-- MARK: MAIN SLIDER -->
+                <section class="main-slider swiper" swiper="{
+                    loop: true,
+                    autoplay: {
+                      delay: 3000,
+                      disableOnInteraction: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                }">
+                    <ul class="swiper-wrapper m-0 list-unstyled">
+                        <li class="swiper-slide">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
+                                    <img src="./assets/images/silder/slide06.jpg" alt="فروشگاه آنلاین ایکات">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
+                                    <img src="./assets/images/silder/slide05.jpg" alt="فروشگاه آنلاین ایکات">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
+                                    <img src="./assets/images/silder/slide04.jpg" alt="فروشگاه آنلاین ایکات">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
+                                    <img src="./assets/images/silder/slide03.jpg" alt="فروشگاه آنلاین ایکات">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#" target="_blank">
+                                <picture>
+                                    <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
+                                    <img src="./assets/images/silder/slide02.jpg" alt="فروشگاه آنلاین ایکات">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </section>
         </main>
 
         <script>

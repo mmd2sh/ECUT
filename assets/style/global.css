@@ -1,5 +1,5 @@
 /* ECUT Style by https://mohamad-sh.ir @ 1402/12/27; */
-/* FONT FACES */
+/* MARK: FONT FACES */
 @font-face {
     font-family: IRANYekanXVF;
     src: url('../fonts/IRANYekanXVF.woff') format('woff-variations'),
@@ -21,15 +21,15 @@
     font-weight: 700;
 }
 
-/* FONT ICON */
+/* MARK: FONT ICON */
 @font-face {
     font-family: 'ecut-ico';
-        src: url('../fonts/ecut-ico.eot?5095352');
-        src: url('../fonts/ecut-ico.eot?5095352#iefix') format('embedded-opentype'),
-        url('../fonts/ecut-ico.woff2?5095352') format('woff2'),
-        url('../fonts/ecut-ico.woff?5095352') format('woff'),
-        url('../fonts/ecut-ico.ttf?5095352') format('truetype'),
-        url('../fonts/ecut-ico.svg?5095352#ecut-ico') format('svg');
+        src: url('../fonts/ecut-ico.eot?1');
+        src: url('../fonts/ecut-ico.eot?1#iefix') format('embedded-opentype'),
+        url('../fonts/ecut-ico.woff2?1') format('woff2'),
+        url('../fonts/ecut-ico.woff?1') format('woff'),
+        url('../fonts/ecut-ico.ttf?1') format('truetype'),
+        url('../fonts/ecut-ico.svg?1#ecut-ico') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -216,6 +216,42 @@ picture {
 	color: var(--color-main) !important;
 }
 
+/* MARK: SWIPER */
+.swiper-pagination {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	bottom: 20px !important;
+}
+
+.swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	opacity: 1;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.swiper-pagination-bullet-active {
+	width: 20px;
+	height: 20px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+}
+
 /* MARK: HEADER */
 .main-header {
 	background: #263238;
@@ -395,7 +431,7 @@ picture {
 	top: 0;
 }
 
-.megamenu-products.active {
+.category-megamenu.nav-active .megamenu-products.active {
 	pointer-events: auto;
 	position: relative;
 	opacity: 1;

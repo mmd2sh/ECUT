@@ -1,6 +1,12 @@
 // ECUT Scripts by https://mohamad-sh.ir
 
 $(document).ready(function() {
+    // MARK: SWIPER INIT BY ATTRIBUTE
+    $('.swiper[swiper]').each(function(_, swiper) {
+        let options = $(swiper).attr('swiper');
+        eval('options=' + options);
+        new Swiper(swiper, options);
+    });
 
     // MARK: MEGAMENU ACTIVATOR
     $('[data-megamenu]:not([data-megamenu=""])').each(function() {
