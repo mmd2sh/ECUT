@@ -2,13 +2,11 @@
 <html lang="fa" dir="rtl">
     <head>
         <title>فروشگاه آنلاین ایکات</title>
-
-        <module-inject file="./head.html"></module-inject>
-
+        <meta name="module" content="./head.html">
         <link href="./assets/style/home.css?v=ADD_VERSION" rel="stylesheet">
     </head>
     <body>
-        <module-inject file="./header.html"></module-inject>
+        <meta name="module" content="./header.html">
 
         <main class="home-page">
             <!-- MARK: MAIN BANNER -->
@@ -97,8 +95,8 @@
                 }
             }
 
-            document.querySelectorAll('module-inject').forEach(function(module) {
-                injectHTML(module.getAttribute('file'), module);
+            document.querySelectorAll('meta[name=module]').forEach(function(module) {
+                injectHTML(module.getAttribute('content'), module);
             });
         </script>
         <script src="./assets/script/jquery-3.7.1.min.js"></script>
