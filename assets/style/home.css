@@ -1,1 +1,11 @@
 /* ECUT Style by https://mohamad-sh.ir */
+/* MARK: ADVANTAGES */
+.advantages-list {
+    background: #fafaf9;
+}
+
+.advantages-item {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+}

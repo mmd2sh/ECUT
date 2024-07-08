@@ -230,7 +230,7 @@ picture {
 	bottom: 20px !important;
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination .swiper-pagination-bullet {
 	width: 12px;
 	height: 12px;
 	background: #fff;
@@ -240,13 +240,13 @@ picture {
 	transition: .3s;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination .swiper-pagination-bullet-active {
 	width: 20px;
 	height: 20px;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
 	color: #fff;
 	font-size: 30px;
 	font-weight: bold;

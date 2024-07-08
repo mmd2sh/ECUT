@@ -3,6 +3,8 @@
     <head>
         <title>فروشگاه آنلاین ایکات</title>
         <meta name="module" content="./head.html">
+
+        <link href="./assets/swiper/swiper-bundle.min.css" rel="stylesheet">
         <link href="./assets/style/home.css?v=ADD_VERSION" rel="stylesheet">
     </head>
     <body>
@@ -20,6 +22,8 @@
             <!-- MARK: MAIN SLIDER -->
                 <section class="main-slider swiper" swiper="{
                     loop: true,
+                    lazy: true,
+                    autoHeight: true,
                     autoplay: {
                       delay: 3000,
                       disableOnInteraction: true,
@@ -46,7 +50,7 @@
                             <a href="#" target="_blank">
                                 <picture>
                                     <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
-                                    <img src="./assets/images/silder/slide05.jpg" alt="فروشگاه آنلاین ایکات">
+                                    <img src="./assets/images/silder/slide05.jpg" loading="lazy" alt="فروشگاه آنلاین ایکات">
                                 </picture>
                             </a>
                         </li>
@@ -54,7 +58,7 @@
                             <a href="#" target="_blank">
                                 <picture>
                                     <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
-                                    <img src="./assets/images/silder/slide04.jpg" alt="فروشگاه آنلاین ایکات">
+                                    <img src="./assets/images/silder/slide04.jpg" loading="lazy" alt="فروشگاه آنلاین ایکات">
                                 </picture>
                             </a>
                         </li>
@@ -62,7 +66,7 @@
                             <a href="#" target="_blank">
                                 <picture>
                                     <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
-                                    <img src="./assets/images/silder/slide03.jpg" alt="فروشگاه آنلاین ایکات">
+                                    <img src="./assets/images/silder/slide03.jpg" loading="lazy" alt="فروشگاه آنلاین ایکات">
                                 </picture>
                             </a>
                         </li>
@@ -70,7 +74,7 @@
                             <a href="#" target="_blank">
                                 <picture>
                                     <!-- <source media="(max-width: 768px)" srcset="MOBILE_IMG_URL_(without_space)"/> -->
-                                    <img src="./assets/images/silder/slide02.jpg" alt="فروشگاه آنلاین ایکات">
+                                    <img src="./assets/images/silder/slide02.jpg" loading="lazy" alt="فروشگاه آنلاین ایکات">
                                 </picture>
                             </a>
                         </li>
@@ -79,8 +83,15 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </section>
+
+                <ul class="advantages-list d-flex flex-wrap align-items-center justify-content-around p-3 gap-2 list-unstyled">
+                    <li class="advantages-item eico-shield">تضمین کیفیت کالا</li>
+                    <li class="advantages-item eico-shield">7 روز ضمانت برگشت</li>
+                    <li class="advantages-item eico-shield">تحویل سریع</li>
+                </ul>
         </main>
 
+        <meta name="module" content="./footer.html">
         <script>
             /* MARK: MAKE PAGE MODULAR */
             async function injectHTML(file, el) {
@@ -101,8 +112,7 @@
         </script>
         <script src="./assets/script/jquery-3.7.1.min.js"></script>
         <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-        <script src="./assets/swiper/swiper-bundle.min.js"></script>
         <script src="./assets/script/global.js?v=ADD_VERSION"></script>
-
+        <script src="./assets/swiper/swiper-bundle.min.js"></script>
     </body>
 </html>
