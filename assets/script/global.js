@@ -2,10 +2,14 @@
 
 $(document).ready(function() {
     // MARK: SWIPER INIT BY ATTRIBUTE
-    $('.swiper[swiper]').each(function(_, swiper) {
-        let options = $(swiper).attr('swiper');
-        eval('options=' + options);
-        new Swiper(swiper, options);
+    $('.swiper[swiper]').each(function() {
+        try {
+            let options = $(this).attr('swiper');
+            eval('options=' + options);
+            new Swiper(this, options);
+        } catch (err) {
+            console.error('Check swiper options', err);
+        }
     });
 
     // MARK: MEGAMENU ACTIVATOR

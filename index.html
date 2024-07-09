@@ -84,16 +84,117 @@
                     <div class="swiper-button-prev"></div>
                 </section>
 
+                <!-- MARK: ADVANTAGES -->
                 <ul class="advantages-list d-flex flex-wrap align-items-center justify-content-around p-3 gap-2 list-unstyled">
                     <li class="advantages-item eico-shield">تضمین کیفیت کالا</li>
                     <li class="advantages-item eico-shield">7 روز ضمانت برگشت</li>
                     <li class="advantages-item eico-shield">تحویل سریع</li>
                 </ul>
+
+                <div class="container-flid px-3 px-lg-5">
+                    <!-- MARK: MARK: CATEGORY CARDS -->
+                    <section class="category-cards-wrap my-4 swiper" swiper="{
+                            lazy: true,
+                            slidesPerView: 4,
+                            spaceBetween: 40,
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                            breakpoints: {
+                                0: {
+                                    spaceBetween: 10,
+                                    slidesPerView: 1,
+                                },
+                                480: {
+                                    spaceBetween: 20,
+                                    slidesPerView: 2,
+                                },
+                                768: {
+                                    spaceBetween: 30,
+                                    slidesPerView: 3,
+                                },
+                                1024: {
+                                    spaceBetween: 40,
+                                    slidesPerView: 4,
+                                }
+                              },
+                        }">
+                        <ul class="swiper-wrapper m-0 list-unstyled">
+                            <li class="category-card-item swiper-slide">
+                                <a href="./category.html" target="_blank">
+                                    <figure class="category-card-fig m-0 ratio ratio-2x3">
+                                        <img src="./assets/images/products/product01.jpg" loading="lazy" alt="کفش">
+                                        <img class="category-card-alt-img" src="./assets/images/products/product02.jpg" loading="lazy" alt="کفش">
+                                    </figure>
+                                    <h2 class="category-card-title">کفش</h2>
+                                </a>
+                            </li>
+                            <li class="category-card-item swiper-slide">
+                                <a href="./category.html" target="_blank">
+                                    <figure class="category-card-fig m-0 ratio ratio-2x3">
+                                        <img src="./assets/images/products/product03.jpg" loading="lazy" alt="پیراهن">
+                                        <img class="category-card-alt-img" src="./assets/images/products/product04.jpg" loading="lazy" alt="پیراهن">
+                                    </figure>
+                                    <h2 class="category-card-title">پیراهن</h2>
+                                </a>
+                            </li>
+                            <li class="category-card-item swiper-slide">
+                                <a href="./category.html" target="_blank">
+                                    <figure class="category-card-fig m-0 ratio ratio-2x3">
+                                        <img src="./assets/images/products/product05.jpg" loading="lazy" alt="تی شرت">
+                                        <img class="category-card-alt-img" src="./assets/images/products/product06.jpg" loading="lazy" alt="تی شرت">
+                                    </figure>
+                                    <h2 class="category-card-title">تی شرت</h2>
+                                </a>
+                            </li>
+                            <li class="category-card-item swiper-slide">
+                                <a href="./category.html" target="_blank">
+                                    <figure class="category-card-fig m-0 ratio ratio-2x3">
+                                        <img src="./assets/images/products/product07.jpg" loading="lazy" alt="کت تک">
+                                        <img class="category-card-alt-img" src="./assets/images/products/product08.jpg" loading="lazy" alt="کت تک">
+                                    </figure>
+                                    <h2 class="category-card-title">کت تک</h2>
+                                </a>
+                            </li>
+                            <li class="category-card-item swiper-slide">
+                                <a href="./category.html" target="_blank">
+                                    <figure class="category-card-fig m-0 ratio ratio-2x3">
+                                        <img src="./assets/images/products/product05.jpg" loading="lazy" alt="شلوار">
+                                        <img class="category-card-alt-img" src="./assets/images/products/product09.jpg" loading="lazy" alt="شلوار">
+                                    </figure>
+                                    <h2 class="category-card-title">شلوار</h2>
+                                </a>
+                            </li>
+                            <li class="category-card-item swiper-slide">
+                                <a href="./category.html" target="_blank">
+                                    <figure class="category-card-fig m-0 ratio ratio-2x3">
+                                        <img src="./assets/images/products/product10.jpg" loading="lazy" alt="دامادی">
+                                        <img class="category-card-alt-img" src="./assets/images/products/product11.jpg" loading="lazy" alt="دامادی">
+                                    </figure>
+                                    <h2 class="category-card-title">دامادی</h2>
+                                </a>
+                            </li>
+                            <li class="category-card-item swiper-slide">
+                                <a href="./category.html" target="_blank">
+                                    <figure class="category-card-fig m-0 ratio ratio-2x3">
+                                        <img src="./assets/images/products/product12.jpg" loading="lazy" alt="کژوال">
+                                        <img class="category-card-alt-img" src="./assets/images/products/product13.jpg" loading="lazy" alt="کژوال">
+                                    </figure>
+                                    <h2 class="category-card-title">کژوال</h2>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </section>
+                </div>
+
         </main>
 
         <meta name="module" content="./footer.html">
         <script>
-            /* MARK: MAKE PAGE MODULAR */
+            // MARK: MAKE PAGE MODULAR
             async function injectHTML(file, el) {
                 try {
                     const response = await fetch(file);
