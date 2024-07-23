@@ -9,3 +9,7 @@
     font-size: 14px;
     font-weight: 300;
 }
+
+.week-offer-slider .swiper-pagination .swiper-pagination-bullet {
+	background: var(--color-alt);
+}
