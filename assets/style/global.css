@@ -691,6 +691,8 @@ picture {
 	z-index: -1;
 }
 
+.newest-products-wrap .swiper-button-prev::after,
+.newest-products-wrap .swiper-button-next::after,
 .category-cards-wrap .swiper-button-prev::after,
 .category-cards-wrap .swiper-button-next::after {
 	color: var(--color-alt);
