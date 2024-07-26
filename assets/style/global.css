@@ -755,3 +755,55 @@ picture {
 	background: var(--color-alt);
 	vertical-align: middle;
 }
+
+/* MARK: FOOTER */
+.main-footer {
+	border-top: 1px solid #b7b4b4;
+	border-bottom: 1px solid #b7b4b4;
+}
+
+.footer-logos-wrap {
+	text-align: center;
+	padding: 25px 15px;
+	background: #F3F4F6;
+}
+
+.footer-logos-item {
+	padding: 10px;
+	background: #fff;
+}
+
+.footer-contact-us-title {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.footer-contact-us-list {
+	color: #777;
+}
+
+.footer-contact-us-list a {
+	color: #777;
+	text-decoration: none;
+}
+
+.footer-contact-us-list a:hover {
+	color: var(--color-alt);
+}
+
+.footer-links a {
+	display: inline-block;
+	color: #777;
+	text-decoration: none;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.footer-links a:hover {
+	color: var(--color-alt);
+	-webkit-transform: translateX(-5px);
+	-ms-transform: translateX(-5px);
+	transform: translateX(-5px);
+}
