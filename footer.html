@@ -1,7 +1,7 @@
 <footer class="main-footer">
     <div class="container-flid px-3 px-lg-5">
 
-        <ul class="row list-unstyled my-4">
+        <ul class="row footer-row list-unstyled my-4">
             <li class="col-2">
                 <div class="footer-logos-wrap">
                     <div class="footer-logos-title">مجوزها</div>
@@ -48,8 +48,50 @@
                 </ul>
             </li>
             <li class="col-4">
-                <hr>
+                <div class="newsletter-wrap">
+                    <p class="newsletter-title">
+                        مشترک شوید تا آخرین اخبار را دریافت کنید.<br>
+                        ما به شما تمامی اخبار و فروش‌های فوق‌العاده را اطلاع رسانی می‌کنیم
+                    </p>
+                    <form class="newsletter-form d-flex align-items-center align-items-stretch mt-3">
+                        <input class="newsletter-input flex-1" type="tel" required
+                            pattern="09\d{9}"
+                            placeholder="شماره همراه خود را وارد کنید."
+                            oninput="this.setCustomValidity('')"
+                            oninvalid="this.setCustomValidity('لطفاً شماره تماس خود را وارد کنید.')">
+                        <button class="newsletter-submit" type="submit">مشترک شوید</button>
+                    </form>
+                </div>
             </li>
         </ul>
     </div>
+
+    <ul class="social-media-list d-flex justify-content-center gap-2 list-unstyled">
+        <li class="social-media-item" data-toggle="tooltip" title="تلگرام">
+            <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </li>
+        <li class="social-media-item" data-toggle="tooltip" title="اینستاگرام">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li class="social-media-item" data-toggle="tooltip" title="آپارات">
+            <a href="#" target="_blank"><i class="eico-aparat"></i></a>
+        </li>
+        <li class="social-media-item" data-toggle="tooltip" title="یوتیوب">
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li class="social-media-item" data-toggle="tooltip" title="پینترست">
+            <a href="#" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+        </li>
+        <li class="social-media-item" data-toggle="tooltip" title="فیسبوک">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li class="social-media-item" data-toggle="tooltip" title="توییتر">
+            <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </li>
+        <li class="social-media-item" data-toggle="tooltip" title="لینکدین">
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+    </ul>
+
+    <div class="footer-copyright text-center">کلیه حقوق محصولات و محتوای این وبگاه متعلق به ایکات است</div>
 </footer>
