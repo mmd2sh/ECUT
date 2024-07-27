@@ -82,44 +82,46 @@
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.eico-arrow-left:before { content: '\e800'; } /* 'î €' */
-.eico-arrow-right:before { content: '\e801'; } /* 'î ' */
-.eico-arrow-right-long:before { content: '\e802'; } /* 'î ‚' */
-.eico-arrow-up:before { content: '\e803'; } /* 'î ƒ' */
-.eico-arrow-up-long:before { content: '\e804'; } /* 'î „' */
-.eico-category:before { content: '\e805'; } /* 'î …' */
-.eico-compare:before { content: '\e806'; } /* 'î †' */
-.eico-email:before { content: '\e807'; } /* 'î ‡' */
-.eico-favorite:before { content: '\e808'; } /* 'î ˆ' */
-.eico-favorite-fill:before { content: '\e809'; } /* 'î ‰' */
-.eico-find:before { content: '\e80a'; } /* 'î Š' */
-.eico-headphone:before { content: '\e80b'; } /* 'î ‹' */
-.eico-home:before { content: '\e80c'; } /* 'î Œ' */
-.eico-insta-outline:before { content: '\e80d'; } /* 'î ' */
-.eico-insta-solid:before { content: '\e80e'; } /* 'î Ž' */
-.eico-linkedin:before { content: '\e80f'; } /* 'î ' */
-.eico-location:before { content: '\e810'; } /* 'î ' */
-.eico-login:before { content: '\e811'; } /* 'î ‘' */
-.eico-phone:before { content: '\e812'; } /* 'î ’' */
-.eico-rate:before { content: '\e813'; } /* 'î “' */
-.eico-search:before { content: '\e814'; } /* 'î ”' */
-.eico-share:before { content: '\e815'; } /* 'î •' */
-.eico-shield:before { content: '\e816'; } /* 'î –' */
-.eico-shop-bag:before { content: '\e817'; } /* 'î —' */
-.eico-star:before { content: '\e818'; } /* 'î ˜' */
-.eico-store:before { content: '\e819'; } /* 'î ™' */
-.eico-user:before { content: '\e81a'; } /* 'î š' */
-.eico-arrow-down:before { content: '\e81b'; } /* 'î ›' */
-.eico-view:before { content: '\e81c'; } /* 'î œ' */
-.eico-hamburger-menu:before { content: '\e81d'; } /* 'î ' */
-.eico-lock:before { content: '\e81e'; } /* 'î ž' */
-.eico-user-circle:before { content: '\e81f'; } /* 'î Ÿ' */
-.eico-plus:before { content: '\e821'; } /* 'î ¡' */
-.eico-filter:before { content: '\e822'; } /* 'î ¢' */
-.eico-order:before { content: '\e823'; } /* 'î £' */
-.eico-close:before { content: '\e824'; } /* 'î ¤' */
-.eico-close-circle:before { content: '\e825'; } /* 'î ¥' */
+.eico-arrow-left:before { content: '\e800'; } /* '' */
+.eico-arrow-right:before { content: '\e801'; } /* '' */
+.eico-arrow-right-long:before { content: '\e802'; } /* '' */
+.eico-arrow-up:before { content: '\e803'; } /* '' */
+.eico-arrow-up-long:before { content: '\e804'; } /* '' */
+.eico-category:before { content: '\e805'; } /* '' */
+.eico-compare:before { content: '\e806'; } /* '' */
+.eico-email:before { content: '\e807'; } /* '' */
+.eico-favorite:before { content: '\e808'; } /* '' */
+.eico-favorite-fill:before { content: '\e809'; } /* '' */
+.eico-find:before { content: '\e80a'; } /* '' */
+.eico-headphone:before { content: '\e80b'; } /* '' */
+.eico-home:before { content: '\e80c'; } /* '' */
+.eico-insta-outline:before { content: '\e80d'; } /* '' */
+.eico-insta-solid:before { content: '\e80e'; } /* '' */
+.eico-linkedin:before { content: '\e80f'; } /* '' */
+.eico-location:before { content: '\e810'; } /* '' */
+.eico-login:before { content: '\e811'; } /* '' */
+.eico-phone:before { content: '\e812'; } /* '' */
+.eico-rate:before { content: '\e813'; } /* '' */
+.eico-search-1:before { content: '\e814'; } /* '' */
+.eico-share:before { content: '\e815'; } /* '' */
+.eico-shield:before { content: '\e816'; } /* '' */
+.eico-shop-bag:before { content: '\e817'; } /* '' */
+.eico-star:before { content: '\e818'; } /* '' */
+.eico-store:before { content: '\e819'; } /* '' */
+.eico-user:before { content: '\e81a'; } /* '' */
+.eico-arrow-down:before { content: '\e81b'; } /* '' */
+.eico-view:before { content: '\e81c'; } /* '' */
+.eico-hamburger-menu:before { content: '\e81d'; } /* '' */
+.eico-lock:before { content: '\e81e'; } /* '' */
+.eico-user-circle:before { content: '\e81f'; } /* '' */
 .eico-aparat:before { content: '\e820'; } /* '' */
+.eico-plus:before { content: '\e821'; } /* '' */
+.eico-filter:before { content: '\e822'; } /* '' */
+.eico-order:before { content: '\e823'; } /* '' */
+.eico-close:before { content: '\e824'; } /* '' */
+.eico-close-circle:before { content: '\e825'; } /* '' */
+.eico-search:before { content: '\e826'; } /* '' */
+.eico-bag:before { content: '\e827'; } /* '' */
 
 /* MARK: GENERAL */
 body {
@@ -397,16 +399,21 @@ picture {
 	color: var(--color-alt);
 }
 
+.header-cart-btn {
+	font-size: 24px;
+}
+
 .cart-quantity {
 	width: 14px;
 	height: 14px;
+	color: #fff;
 	text-align: center;
 	font-size: 10px;
 	border-radius: 50%;
 	background: var(--color-alt);
 	position: absolute;
 	bottom: 16px;
-	left: 1px;
+	left: 5px;
 }
 
 /* MEGAMENU ECUT CARD */
