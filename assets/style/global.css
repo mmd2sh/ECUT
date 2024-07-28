@@ -340,7 +340,7 @@ picture {
 	-o-transition: .3s;
 	transition: .3s;
 	overflow: hidden;
-	z-index: 1;
+	z-index: 9;
 	opacity: 0;
 	top: 100%;
 	right: 0;
@@ -744,6 +744,10 @@ picture {
 	opacity: 1;
 }
 
+.header-search-wrap .product-simple-item {
+	max-width: 150px;
+}
+
 .header-search-form {
 	padding: 12.5px;
 	border-bottom: 1px solid #7777;
@@ -752,6 +756,13 @@ picture {
 .header-search-close {
 	color: #777;
 	font-size: 20px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.header-search-close:hover {
+	color: var(--color-alt);
 }
 
 .header-search-submit {
@@ -760,6 +771,13 @@ picture {
 	border: 0;
 	background: none;
 	outline: 0;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.header-search-submit:hover {
+	color: var(--color-alt);
 }
 
 .header-search-input {
@@ -769,6 +787,32 @@ picture {
 	border: 0;
 	border-right: 1px solid #777;
 	outline: 0;
+}
+
+/* search links */
+.search-links-title {
+	color: #777;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.search-link-item a {
+	display: inline-block;
+	color: #777;
+	font-size: 16px;
+	font-weight: 300;
+	text-decoration: none;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.search-link-item a:hover {
+	color: var(--color-alt);
+	font-weight: 600;
+	-webkit-transform: translateX(-5px);
+	-ms-transform: translateX(-5px);
+	transform: translateX(-5px);
 }
 
 /* MARK: NEWEST PRODUCTS */

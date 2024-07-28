@@ -42,6 +42,11 @@ $(document).ready(function() {
         wrap.toggleClass('active');
         $(this).toggleClass('active', wrap.is('.active'));
     });
+    // close search
+    $('.header-search-close').on('click', function() {
+        $('.header-search-wrap').removeClass('active');
+        $('.header-search-btn').removeClass('active');
+    });
 
     // MARK: initiate bootstrap tooltip
     $('[data-toggle="tooltip"]').tooltip();
