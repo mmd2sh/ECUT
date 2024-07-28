@@ -388,7 +388,7 @@ picture {
 /* MARK: HEADER CALL TO ACTIONS */
 .header-cta-list .nav-link {
 	color: #fff;
-	font-weight: normal;
+	font-size: 14px;
 }
 
 .header-cta-list .nav-link:hover {
@@ -400,7 +400,7 @@ picture {
 }
 
 .header-cart-btn {
-	font-size: 24px;
+	font-size: 24px !important;
 }
 
 .cart-quantity {
@@ -715,6 +715,63 @@ picture {
 	margin: 0 5px;
 }
 
+/* MARK: SEARCH HEADER */
+.header-search-wrap {
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	-webkit-transform: scaleX(.98) translateY(10px);
+	-ms-transform: scaleX(.98) translateY(10px);
+	transform: scaleX(.98) translateY(10px);
+	-webkit-box-shadow: 0 999px 0 999px rgb(0 0 0 / 50%);
+	box-shadow: 0 999px 0 999px rgb(0 0 0 / 50%);
+	pointer-events: none;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	overflow: hidden;
+	z-index: 1;
+	opacity: 0;
+	top: 100%;
+	right: 0;
+}
+
+.header-search-wrap.active {
+    pointer-events: auto;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+	opacity: 1;
+}
+
+.header-search-form {
+	padding: 12.5px;
+	border-bottom: 1px solid #7777;
+}
+
+.header-search-close {
+	color: #777;
+	font-size: 20px;
+}
+
+.header-search-submit {
+	color: #777;
+	font-weight: bold;
+	border: 0;
+	background: none;
+	outline: 0;
+}
+
+.header-search-input {
+	font-size: 16px;
+	font-weight: 300;
+	padding: 0 7px;
+	border: 0;
+	border-right: 1px solid #777;
+	outline: 0;
+}
+
+/* MARK: NEWEST PRODUCTS */
 .newest-products-title {
 	font-size: 20px;
 	font-weight: 700;
@@ -732,6 +789,7 @@ picture {
 	vertical-align: middle;
 }
 
+/* MARK: MISC BOX */
 .misc-box-item {
 	color: #000;
 	text-decoration: none;

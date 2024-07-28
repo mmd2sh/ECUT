@@ -36,6 +36,13 @@ $(document).ready(function() {
         });
     });
 
+    // MARK: SEARCH TOGGLE
+    $('.header-search-btn').on('click', function() {
+        let wrap = $('.header-search-wrap');
+        wrap.toggleClass('active');
+        $(this).toggleClass('active', wrap.is('.active'));
+    });
+
     // MARK: initiate bootstrap tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
