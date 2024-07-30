@@ -3,7 +3,7 @@
 
         <div class="header-box d-flex align-items-center py-2">
             <!-- MARK: MAIN NAV -->
-            <nav class="main-nav navbar navbar-dark navbar-expand flex-1" aria-label="main menu">
+            <nav class="main-nav navbar navbar-dark navbar-expand flex-1 d-none d-lg-block" aria-label="main menu">
                 <ul class="navbar-nav flex-wrap">
                     <li class="nav-item"><a class="nav-link" href="/">صفحه اصلی</a></li>
                     <li class="nav-item"><a class="nav-link" data-megamenu=".category-megamenu" href="/category.html" target="_blank">محصولات</a></li>
@@ -13,6 +13,10 @@
                     <li class="nav-item"><a class="nav-link" href="#" target="_blank">تماس با ما</a></li>
                 </ul>
             </nav>
+
+            <div class="flex-1 d-lg-none">
+                <a class="res-nav-btn" href="#"><i class="eico-hamburger-menu"></i></a>
+            </div>
 
             <!-- MARK: MEGAMENU -->
             <section class="category-megamenu">
@@ -337,7 +341,7 @@
             <!-- MARK: HEADER CALL TO ACTIONS -->
             <nav class="navbar navbar-dark navbar-expand flex-1 justify-content-end" aria-label="call to actions">
                 <ul class="header-cta-list navbar-nav align-items-center">
-                    <li class="nav-item d-none d-lg-block">
+                    <li class="nav-item">
                         <a class="nav-link header-search-btn eico-search-1" href="#" aria-label="search"></a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
