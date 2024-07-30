@@ -1,6 +1,12 @@
 // ECUT Scripts by https://mohamad-sh.ir
 
 $(document).ready(function() {
+    // MARK: HEADER HEIGHT
+    $(window).on('resize', function() {
+        let hHeight = $('.main-header').height();
+        $(':root').css('--header-height', hHeight + 'px');
+    }).resize();
+
     // MARK: SWIPER INIT BY ATTRIBUTE
     $('.swiper[swiper]').each(function() {
         try {

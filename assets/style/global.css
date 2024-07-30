@@ -203,6 +203,7 @@ picture {
     --color-alt: #ff7300;
     --color-success: #52b788;
 	--color-danger: #e5383a;
+	--header-height: 84px;
 }
 
 .current-link {
@@ -328,6 +329,7 @@ picture {
 /* MARK: MEGAMENU */
 .category-megamenu {
 	width: 100%;
+	max-height: calc(100vh - var(--header-height));
 	background: #fff;
 	position: absolute;
 	-webkit-transform: scaleX(.98) translateY(10px);
@@ -339,7 +341,8 @@ picture {
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 	z-index: 9;
 	opacity: 0;
 	top: 100%;
@@ -414,6 +417,15 @@ picture {
 	position: absolute;
 	bottom: 16px;
 	left: 5px;
+}
+
+.header-search-btn {
+	transition: .3s;
+}
+
+.header-search-btn.active {
+	color: var(--color-alt) !important;
+	transform: rotate(90deg);
 }
 
 /* MEGAMENU ECUT CARD */
@@ -737,11 +749,13 @@ picture {
 }
 
 .header-search-wrap.active {
+    max-height: calc(100vh - var(--header-height));
     pointer-events: auto;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-	opacity: 1;
+    overflow: auto;
+    opacity: 1;
 }
 
 .header-search-wrap .product-simple-item {
