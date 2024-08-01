@@ -425,12 +425,16 @@ picture {
 }
 
 .header-search-btn {
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 
 .header-search-btn.active {
 	color: var(--color-alt) !important;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 
 /* MEGAMENU ECUT CARD */
@@ -468,10 +472,10 @@ picture {
 }
 
 /* MARK: PRODUCT SIMPLE BOX */
-.product-simple-item {
+.product-simple-item:not(.swiper-slide) {
     width: 100%;
-	max-width: 408px;
-	position: relative;
+    max-width: 408px;
+    position: relative;
 }
 
 .megamenu-products .product-simple-item {
@@ -832,6 +836,41 @@ picture {
 	-webkit-transform: translateX(-5px);
 	-ms-transform: translateX(-5px);
 	transform: translateX(-5px);
+}
+
+/* MARK: MAIN SLIDER */
+.main-banner,
+.main-slider,
+.week-offer-slider {
+    max-width: 1920px;
+    margin: auto;
+	position: relative;
+}
+
+.follow-us-icon {
+	width: 10vw;
+	height: 5vw;
+	position: absolute;
+	bottom: 10vw;
+	left: 10vw;
+}
+
+.follow-us-icon img {
+	position: absolute;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	left: 0;
+	top: 0;
+}
+
+.follow-us-hover,
+.follow-us-icon:hover img {
+	opacity: 0;
+}
+
+.follow-us-icon:hover .follow-us-hover {
+	opacity: 1;
 }
 
 /* MARK: NEWEST PRODUCTS */
