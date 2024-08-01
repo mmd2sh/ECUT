@@ -8,7 +8,7 @@ $(document).ready(function() {
     }).resize();
 
     // MARK: SWIPER INIT BY ATTRIBUTE
-    $('.swiper[swiper]').each(function() {
+    $('[swiper]').each(function() {
         try {
             let options = $(this).attr('swiper');
             eval('options=' + options);

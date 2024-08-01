@@ -807,7 +807,7 @@ picture {
 	font-weight: 300;
 	padding: 0 7px;
 	border: 0;
-	border-right: 1px solid #777;
+	caret-color: var(--color-alt);
 	outline: 0;
 }
 
