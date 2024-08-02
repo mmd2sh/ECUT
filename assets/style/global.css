@@ -272,15 +272,12 @@ picture {
 	font-weight: 300;
 	position: relative;
 	text-align: center;
-	padding: 5px 10px;
+	padding: 0 10px;
+	margin: 0 6px;
 }
 
 .main-nav .nav-link:hover {
-	color: var(--color-alt);
-	/* font-weight: bold; */
-	/* letter-spacing: -.55px; */
-	text-shadow: 0 0 1px var(--color-alt), 0 0 1px var(--color-alt);
-	/* -webkit-text-stroke: 1px var(--color-alt); */
+	background: var(--color-alt);
 }
 
 [data-megamenu] {
@@ -323,7 +320,7 @@ picture {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 	top: 50%;
-	left: 0;
+	left: -7px;
 }
 
 .res-nav-btn {
@@ -375,15 +372,33 @@ picture {
 	font-size: 18px;
 	line-height: 29px;
 	text-decoration: none;
-	border-bottom: 1px solid #e6e6e6;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
 }
 
+.category-nav .category-item:not(:last-child) > a {
+	display: block;
+	color: #676767;
+	font-size: 18px;
+	line-height: 29px;
+	text-decoration: none;
+	border-bottom: 1px solid #777;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.category-list > .category-item > a:hover {
+	color: #fff;
+	text-indent: 5px;
+	background: var(--color-alt);
+	border-color: transparent;
+}
+
 .category-nav a:hover {
-	color: var(--color-alt);
-	text-shadow: 0 0 1px var(--color-alt), 0 0 1px var(--color-alt);
+	background: #ededed;
+	border-color: transparent;
 	-webkit-transform: translateX(-5px);
 	-ms-transform: translateX(-5px);
 	transform: translateX(-5px);
@@ -607,7 +622,7 @@ picture {
 	top: 0;
 }
 
-.category-slider-item.active {
+.category-megamenu.nav-active .category-slider-item.active {
 	height: 100%;
 	background: #fff;
     position: relative;
@@ -642,23 +657,23 @@ picture {
 	background: rgb(255 255 255 / 50%);
 }
 
-.category-slider-item .swiper-pagination {
+.category-slider-wrap .swiper-pagination {
 	width: 100% !important;
 	position: absolute;
-	bottom: 10px !important;
+	bottom: 20px !important;
 }
 
-.category-slider-item .swiper-pagination-bullet {
-	width: 20px;
-	height: 8px;
-	border-radius: 0;
-	background: #727272;
+.category-slider-wrap .swiper-pagination-bullet {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: rgb(119 119 119 / 50%);
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
 }
 
-.category-slider-item .swiper-pagination-bullet-active {
+.category-slider-wrap .swiper-pagination-bullet-active {
 	background: #fff;
 }
 
