@@ -95,11 +95,12 @@
                 <li class="advantages-item eico-shield">تحویل سریع</li>
             </ul>
 
-            <div class="container-fluid px-3 px-lg-5">
+            <div class="container-fluid px-3 px-lg-5 mt-5">
                 <!-- MARK: MARK: CATEGORY CARDS -->
                 <section class="swiper-container position-relative px-5">
                     <div class="category-cards-wrap swiper position-static" swiper="{
                             lazy: true,
+                            loop: true,
                             slidesPerView: 4,
                             spaceBetween: 40,
                             navigation: {
@@ -109,10 +110,6 @@
                             breakpoints: {
                                 0: {
                                     spaceBetween: 10,
-                                    slidesPerView: 1,
-                                },
-                                480: {
-                                    spaceBetween: 20,
                                     slidesPerView: 2,
                                 },
                                 768: {
@@ -123,7 +120,7 @@
                                     spaceBetween: 40,
                                     slidesPerView: 4,
                                 }
-                                },
+                            },
                         }">
                         <ul class="swiper-wrapper m-0 list-unstyled">
                             <li class="category-card-item swiper-slide">
@@ -269,6 +266,7 @@
                     <section class="swiper-container position-relative px-5">
                         <div class="newest-products-swiper swiper position-static" swiper="{
                             lazy: true,
+                            loop: true,
                             slidesPerView: 4,
                             spaceBetween: 40,
                             navigation: {
@@ -278,10 +276,6 @@
                             breakpoints: {
                                 0: {
                                     spaceBetween: 10,
-                                    slidesPerView: 1,
-                                },
-                                480: {
-                                    spaceBetween: 20,
                                     slidesPerView: 2,
                                 },
                                 768: {
@@ -292,13 +286,13 @@
                                     spaceBetween: 40,
                                     slidesPerView: 4,
                                 }
-                                },
+                            },
                         }">
                             <ul class="products-simple-list swiper-wrapper list-unstyled pb-3">
 
                                 <li class="product-simple-item swiper-slide">
                                     <a class="text-black text-decoration-none" href="./product.html" target="_blank">
-                                        <figure class="product-simple-fig mb-2 ratio ratio-2x3">
+                                        <figure class="product-simple-fig ratio ratio-2x3">
                                             <img src="./assets/images/products/product06.jpg" loading="lazy" alt="ProductName">
                                             <img class="product-simple-alt-img" src="./assets/images/products/product09.jpg" loading="lazy" alt="ProductName">
                                         </figure>
@@ -322,8 +316,13 @@
                                         </ul>
 
                                         <ul class="product-simple-cta-list d-flex gap-1 list-unstyled ms-auto">
-                                            <li class="product-simple-cta-item" data-toggle="tooltip" title="15% تخفیف">
-                                                <span class="product-simple-discounted">تخفیف دار</span>
+                                            <li class="product-simple-cta-item">
+                                                <!-- if product is discounted -->
+                                                <div class="product-simple-discounted">
+                                                    <span>تخفیف دار</span>
+                                                    <span class="product-simple-discount-precent">15%</span>
+                                                </div>
+                                                <!-- end if -->
                                             </li>
                                             <li class="product-simple-cta-item" data-toggle="tooltip" title="علاقه مندی">
                                                 <a class="eico-favorite" href="#" aria-label="favorite"></a>
@@ -334,7 +333,7 @@
 
                                 <li class="product-simple-item swiper-slide">
                                     <a class="text-black text-decoration-none" href="./product.html" target="_blank">
-                                        <figure class="product-simple-fig mb-2 ratio ratio-2x3">
+                                        <figure class="product-simple-fig ratio ratio-2x3">
                                             <img src="./assets/images/products/product03.jpg" loading="lazy" alt="ProductName">
                                             <img class="product-simple-alt-img" src="./assets/images/products/product04.jpg" loading="lazy" alt="ProductName">
                                         </figure>
@@ -358,8 +357,13 @@
                                         </ul>
 
                                         <ul class="product-simple-cta-list d-flex gap-1 list-unstyled ms-auto">
-                                            <li class="product-simple-cta-item" data-toggle="tooltip" title="15% تخفیف">
-                                                <span class="product-simple-discounted">تخفیف دار</span>
+                                            <li class="product-simple-cta-item">
+                                                <!-- if product is discounted -->
+                                                <div class="product-simple-discounted">
+                                                    <span>تخفیف دار</span>
+                                                    <span class="product-simple-discount-precent">15%</span>
+                                                </div>
+                                                <!-- end if -->
                                             </li>
                                             <li class="product-simple-cta-item" data-toggle="tooltip" title="علاقه مندی">
                                                 <a class="eico-favorite" href="#" aria-label="favorite"></a>
@@ -369,7 +373,7 @@
                                 </li><!-- end of product item -->
                                 <li class="product-simple-item swiper-slide">
                                     <a class="text-black text-decoration-none" href="./product.html" target="_blank">
-                                        <figure class="product-simple-fig mb-2 ratio ratio-2x3">
+                                        <figure class="product-simple-fig ratio ratio-2x3">
                                             <img src="./assets/images/products/product06.jpg" loading="lazy" alt="ProductName">
                                             <img class="product-simple-alt-img" src="./assets/images/products/product09.jpg" loading="lazy" alt="ProductName">
                                         </figure>
@@ -393,8 +397,13 @@
                                         </ul>
 
                                         <ul class="product-simple-cta-list d-flex gap-1 list-unstyled ms-auto">
-                                            <li class="product-simple-cta-item" data-toggle="tooltip" title="15% تخفیف">
-                                                <span class="product-simple-discounted">تخفیف دار</span>
+                                            <li class="product-simple-cta-item">
+                                                <!-- if product is discounted -->
+                                                <div class="product-simple-discounted">
+                                                    <span>تخفیف دار</span>
+                                                    <span class="product-simple-discount-precent">15%</span>
+                                                </div>
+                                                <!-- end if -->
                                             </li>
                                             <li class="product-simple-cta-item" data-toggle="tooltip" title="علاقه مندی">
                                                 <a class="eico-favorite" href="#" aria-label="favorite"></a>
@@ -405,7 +414,7 @@
 
                                 <li class="product-simple-item swiper-slide">
                                     <a class="text-black text-decoration-none" href="./product.html" target="_blank">
-                                        <figure class="product-simple-fig mb-2 ratio ratio-2x3">
+                                        <figure class="product-simple-fig ratio ratio-2x3">
                                             <img src="./assets/images/products/product03.jpg" loading="lazy" alt="ProductName">
                                             <img class="product-simple-alt-img" src="./assets/images/products/product04.jpg" loading="lazy" alt="ProductName">
                                         </figure>
@@ -429,8 +438,13 @@
                                         </ul>
 
                                         <ul class="product-simple-cta-list d-flex gap-1 list-unstyled ms-auto">
-                                            <li class="product-simple-cta-item" data-toggle="tooltip" title="15% تخفیف">
-                                                <span class="product-simple-discounted">تخفیف دار</span>
+                                            <li class="product-simple-cta-item">
+                                                <!-- if product is discounted -->
+                                                <div class="product-simple-discounted">
+                                                    <span>تخفیف دار</span>
+                                                    <span class="product-simple-discount-precent">15%</span>
+                                                </div>
+                                                <!-- end if -->
                                             </li>
                                             <li class="product-simple-cta-item" data-toggle="tooltip" title="علاقه مندی">
                                                 <a class="eico-favorite" href="#" aria-label="favorite"></a>
@@ -440,7 +454,7 @@
                                 </li><!-- end of product item -->
                                 <li class="product-simple-item swiper-slide">
                                     <a class="text-black text-decoration-none" href="./product.html" target="_blank">
-                                        <figure class="product-simple-fig mb-2 ratio ratio-2x3">
+                                        <figure class="product-simple-fig ratio ratio-2x3">
                                             <img src="./assets/images/products/product06.jpg" loading="lazy" alt="ProductName">
                                             <img class="product-simple-alt-img" src="./assets/images/products/product09.jpg" loading="lazy" alt="ProductName">
                                         </figure>
@@ -464,8 +478,13 @@
                                         </ul>
 
                                         <ul class="product-simple-cta-list d-flex gap-1 list-unstyled ms-auto">
-                                            <li class="product-simple-cta-item" data-toggle="tooltip" title="15% تخفیف">
-                                                <span class="product-simple-discounted">تخفیف دار</span>
+                                            <li class="product-simple-cta-item">
+                                                <!-- if product is discounted -->
+                                                <div class="product-simple-discounted">
+                                                    <span>تخفیف دار</span>
+                                                    <span class="product-simple-discount-precent">15%</span>
+                                                </div>
+                                                <!-- end if -->
                                             </li>
                                             <li class="product-simple-cta-item" data-toggle="tooltip" title="علاقه مندی">
                                                 <a class="eico-favorite" href="#" aria-label="favorite"></a>
@@ -476,7 +495,7 @@
 
                                 <li class="product-simple-item swiper-slide">
                                     <a class="text-black text-decoration-none" href="./product.html" target="_blank">
-                                        <figure class="product-simple-fig mb-2 ratio ratio-2x3">
+                                        <figure class="product-simple-fig ratio ratio-2x3">
                                             <img src="./assets/images/products/product03.jpg" loading="lazy" alt="ProductName">
                                             <img class="product-simple-alt-img" src="./assets/images/products/product04.jpg" loading="lazy" alt="ProductName">
                                         </figure>
@@ -500,8 +519,13 @@
                                         </ul>
 
                                         <ul class="product-simple-cta-list d-flex gap-1 list-unstyled ms-auto">
-                                            <li class="product-simple-cta-item" data-toggle="tooltip" title="15% تخفیف">
-                                                <span class="product-simple-discounted">تخفیف دار</span>
+                                            <li class="product-simple-cta-item">
+                                                <!-- if product is discounted -->
+                                                <div class="product-simple-discounted">
+                                                    <span>تخفیف دار</span>
+                                                    <span class="product-simple-discount-precent">15%</span>
+                                                </div>
+                                                <!-- end if -->
                                             </li>
                                             <li class="product-simple-cta-item" data-toggle="tooltip" title="علاقه مندی">
                                                 <a class="eico-favorite" href="#" aria-label="favorite"></a>

@@ -852,10 +852,13 @@ picture {
     opacity: 1;
 }
 
+.product-simple-item {
+	container-type: inline-size;
+}
+
 .header-search-wrap .product-simple-item {
 	min-width: 23%;
 	max-width: 150px;
-	container-type: inline-size;
 }
 
 .header-search-form {
@@ -866,6 +869,7 @@ picture {
 .header-search-close {
 	color: #777;
 	font-size: 20px;
+	text-decoration: none;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
@@ -900,9 +904,7 @@ picture {
 }
 
 .products-simple-list {
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	display: block;
 }
 
 /* search links */
@@ -1019,6 +1021,8 @@ picture {
 
 /* MARK: FOOTER */
 .main-footer {
+	max-width: 1920px;
+	margin: auto;
 	border-top: 1px solid #b7b4b4;
 }
 
@@ -1030,6 +1034,10 @@ picture {
 	text-align: center;
 	padding: 25px 15px;
 	background: #F3F4F6;
+}
+
+.footer-logos-title {
+	color: #777;
 }
 
 .footer-logos-item {
