@@ -60,7 +60,7 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 
     // MARK: PRODUCT FAVORITE TOGGLE
-    $('[class*=cta-item] [class*=eico-favorite]').on('click', function(ev) {
+    $('.product-simple-fav-link').on('click', function(ev) {
         var favBtn = $(this);
         ev.preventDefault();
         favBtn.toggleClass('eico-favorite eico-favorite-fill'); // <- comment this line when you using following functions 
