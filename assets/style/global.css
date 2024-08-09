@@ -419,6 +419,10 @@ picture {
 }
 
 /* MARK: HEADER CALL TO ACTIONS */
+.header-cta-list {
+	z-index: 9;
+}
+
 .header-cta-list .nav-link {
 	color: #fff;
 	font-size: 14px;
@@ -426,6 +430,91 @@ picture {
 
 .header-cta-list .nav-link:hover {
 	color: var(--color-alt);
+}
+
+.header-cta-list > li {
+	position: relative;
+	z-index: 1;
+}
+
+.header-cta-list > li:hover::before {
+	content: '' !important;
+	display: block;
+    width: 100%;
+    height: 150% !important;
+    /* background: red; */
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform: rotateX(45deg);
+    transform: rotateX(45deg);
+	position: absolute;
+	z-index: -1;
+	top: 100% !important;
+	right: 0;
+}
+
+.header-cta-list > li > ul {
+	min-width: 145px;
+	padding: 15px;
+	margin: 23px 0 0;
+	list-style: none;
+	background: #fff;
+	position: absolute;
+	-webkit-transform: scaleX(.98) translateY(10px);
+	-ms-transform: scaleX(.98) translateY(10px);
+	transform: scaleX(.98) translateY(10px);
+	pointer-events: none;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 9;
+	opacity: 0;
+	top: 100%;
+	right: 0;
+}
+
+.header-cta-list > li:hover > ul {
+	pointer-events: auto;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+	opacity: 1;
+}
+
+.header-cta-list li ul a {
+	color: #777;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.header-profile-nav a {
+	display: block;
+	padding: 4px 0;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.header-profile-nav a:hover {
+	color: var(--color-alt);
+	-webkit-transform: translateX(-5px);
+	    -ms-transform: translateX(-5px);
+	        transform: translateX(-5px);
+}
+
+.header-profile-nav > li:first-child {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #777;
+}
+
+.header-profile-nav > li:last-child {
+	padding-top: 5px;
+	margin-top: 5px;
+	border-top: 1px solid #777;
 }
 
 .header-login-btn span {
@@ -515,8 +604,10 @@ picture {
 }
 
 .product-simple-fig img {
-	object-fit: cover;
-	object-position: top center;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: top center;
+	   object-position: top center;
 }
 
 .product-simple-item:hover .product-simple-fig {
