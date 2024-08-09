@@ -508,7 +508,7 @@ picture {
     margin-bottom: 30px;
 }
 
-.product-simple-fig {
+.header-search-wrap .product-simple-fig {
 	height: 60%;
 	margin: 0;
 	overflow: hidden;
@@ -553,7 +553,7 @@ picture {
     margin: 10px 0 0;
 }
 
-.product-simple-item:hover .product-simple-title {
+.header-search-wrap .product-simple-item:hover .product-simple-title {
 	display: none;
 }
 
@@ -589,7 +589,8 @@ picture {
 	font-weight: bold;
 	padding: 2px;
 }
-.product-simple-item:hover .product-simple-price {
+
+..header-search-wrap .product-simple-item:hover .product-simple-price {
 	background: #f0eeee;
 }
 
