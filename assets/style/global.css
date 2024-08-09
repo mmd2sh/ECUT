@@ -514,6 +514,11 @@ picture {
 	overflow: hidden;
 }
 
+.product-simple-fig img {
+	object-fit: cover;
+	object-position: top center;
+}
+
 .product-simple-item:hover .product-simple-fig {
 	height: auto;
 }
@@ -596,6 +601,13 @@ picture {
 	font-weight: bold;
 	padding: clamp(0px, 1vw, 1px);
 	border: 1px solid #bbb;
+	background: var(--color);
+}
+
+
+.product-simple-color-item:hover {
+	-webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color);
+	        box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color);
 }
 
 .product-simple-cta-item a {
