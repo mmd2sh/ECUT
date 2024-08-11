@@ -698,20 +698,24 @@ main.home-page ~ .main-footer {
 }
 
 .product-simple-color-item {
+	font-size: clamp(1px, 1vw, 10px);
+}
+
+.product-simple-color-item a {
+	display: block;
 	width: 18px;
 	height: 18px;
 	text-align: center;
-	font-size: clamp(1px, 1vw, 10px);
 	font-weight: bold;
 	padding: clamp(0px, 1vw, 1px);
 	border: 1px solid #bbb;
 	background: var(--color);
+	cursor: pointer;
 }
 
-
-.product-simple-color-item:hover {
+.product-simple-color-item a:hover {
 	-webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color);
-	        box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color);
+	box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color);
 }
 
 .product-simple-cta-item a {

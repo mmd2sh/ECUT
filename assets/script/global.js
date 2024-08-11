@@ -94,6 +94,27 @@ $(document).ready(function() {
         });
     });
 
+    // MARK: CHANGE PRODUCT IMAGE ON COLOR CLICK
+    $('.product-simple-item').each(function(_, item) {
+        var fig = $('.product-simple-fig', item);
+        var color = $('[data-image-urls]', item);
+
+        if (fig.length > 0) {
+        color.on('click', function(ev) {
+            ev.preventDefault();
+            var imgUrls = this.dataset.imageUrls.split(',');
+
+            if (imgUrls[0].trim() != '') {
+                $('img:first-child', fig).attr('src', imgUrls[0].trim());
+            }
+            if (imgUrls[1].trim() != '') {
+                $('img:last-child', fig).attr('src', imgUrls[1].trim());
+            }
+            this.blur();
+        });
+        }
+    });
+
     // $('[category-slider]').each(function(i, link) {
     //     let name = $(link).attr('category-slider');
     //     let products = $('.megamenu-products');
