@@ -236,7 +236,7 @@ html {
 }
 
 main.home-page > *,
-.main-footer {
+main.home-page ~ .main-footer {
 	scroll-snap-align: start;
 	scroll-margin: var(--header-height);
 }
