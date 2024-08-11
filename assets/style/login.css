@@ -1,0 +1,61 @@
+/* ECUT Login Style by https://mohamad-sh.ir */
+#LoginCanvas {
+    width: 518px;
+}
+
+#LoginCanvas .offcanvas-header {
+    height: var(--header-height);
+    color: #fff;
+    background: var(--color-main);
+}
+
+#LoginCanvas .offcanvas-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#LoginCanvas .offcanvas-body {
+    padding: 23px 32px;
+}
+
+#LoginCanvas .login-close-btn {
+    color: #777;
+    font-size: 20px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+#LoginCanvas .login-close-btn:hover {
+    color: var(--color-alt);
+    font-size: 20px;
+}
+
+.login-wrap {
+    width: 410px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.login-title {
+    color: #777;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 1px solid #cecece;
+}
+
+.login-phone-label {
+    color: #777;
+}
+
+.login-policy {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.login-policy a {
+    text-decoration: none;
+}
