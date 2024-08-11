@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     // MARK: HEADER HEIGHT
-    $(window).on('resize', function() {
+    $(window).on('scroll resize', function() {
         let hHeight = $('.main-header').height();
         $(':root').css('--header-height', hHeight + 'px');
     }).resize();

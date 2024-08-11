@@ -221,13 +221,25 @@ picture {
 	color: var(--color-main) !important;
 }
 
-/* MARK: SCROLLBAR */
+/* MARK: SCROLL */
 ::-webkit-scrollbar-track { background: var(--color-main) }
 ::-webkit-scrollbar { width: 10px; height: 10px; background: var(--color-main) }
 ::-webkit-scrollbar-thumb { border-radius: 50px }
 ::-webkit-scrollbar-thumb { border: 2px solid var(--color-main); background: var(--color-alt) }
 ::-webkit-scrollbar-thumb:hover { border-width: 0 }
 /* :root, * { scrollbar-width: thin; scrollbar-color: var(--color-alt) var(--color-main) } */
+
+html {
+	-ms-scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+
+main.home-page > *,
+.main-footer {
+	scroll-snap-align: start;
+	scroll-margin: var(--header-height);
+}
 
 /* MARK: SWIPER */
 .swiper-pagination {
@@ -1043,7 +1055,7 @@ picture {
 .week-offer-slider {
     max-width: 1920px;
     margin: auto;
-	position: relative;
+    position: relative;
 }
 
 .follow-us-icon {
@@ -1076,7 +1088,7 @@ picture {
 .newest-products-title {
 	font-size: 20px;
 	font-weight: 700;
-	margin: 60px 0;
+	margin: 0 0 60px;
 }
 
 .newest-products-title::before,
