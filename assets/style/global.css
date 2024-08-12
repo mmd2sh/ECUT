@@ -224,7 +224,10 @@ picture {
     /* outline: 1px solid pink !important; */
 }
 
-.form-control:focus {
+.form-control:focus,
+.btn-primary:active,
+.btn-primary:focus-visible,
+.btn-primary:first-child:active {
     border-color: var(--color-alt);
     -webkit-box-shadow: 0 0 0 .25rem rgb(255 115 0 / 25%);
     box-shadow: 0 0 0 .25rem rgb(255 115 0 / 25%);
@@ -236,7 +239,10 @@ picture {
 	border-color: var(--color-main);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus-visible,
+.btn-primary:first-child:active {
 	background: var(--color-alt);
 	border-color: var(--color-alt);
 }

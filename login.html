@@ -1,5 +1,5 @@
 <link href="./assets/style/login.css?v=ADD_VERSION" rel="stylesheet">
-
+<!-- MARK: LOGIN CANVAS -->
 <div class="offcanvas offcanvas-end" id="LoginCanvas" tabindex="-1">
     <header class="offcanvas-header flex-center-both">
         <h5 class="offcanvas-title" id="LoginCanvasLabel">
@@ -14,53 +14,79 @@
     <div class="offcanvas-body">
 
         <section class="login-wrap">
-            
-            <div class="text-center">
-                <h6 class="login-title d-inline-block">سلام<br>به وبگاه رسمی ایکات خوش آمدید!</d6>
+
+            <!-- MARK: LOGIN PHONE -->
+            <div class="login-get-phone">
+
+                <div class="text-center">
+                    <h6 class="login-title d-inline-block">سلام<br>به وبگاه رسمی ایکات خوش آمدید!</d6>
+                </div>
+                
+                <label class="login-phone-label d-block text-center my-5">
+                    <span>لطفا برای ادامه شماره موبایل خود را وارد کنید.</span>
+                    <input type="text" class="login-phone-input form-control my-3" placeholder="مثال: 09125873251">
+                </label>
+    
+                <div class="d-grid mb-4">
+                    <button type="button" class="btn btn-primary login-phone-btn">ادامـه</button>
+                </div>
+    
+                <p class="login-policy text-center mb-5">با ورود یا ثبت نام در وبگاه رسمی ایکات، شما تمامی
+                    <a href="#" target="_blank">قوانین و مقررات</a>
+                    سامانه فروشگاهی پوشاک ایکات را می‌پذیرید.
+                </p>
+    
+                <div class="login-det">
+                    <h6 class="login-det-title">یک حساب کاربری ایجاد کنید.</h6>
+    
+                    <p class="login-det-text">یک حساب کاربری ایجاد کنید تا از تمام مزایای مشتریان ثبت نام شده ما بهره‌مند شوید.</p>
+    
+                    <ul class="login-det-list list-unstyled">
+                        <li class="login-det-item">
+                            <i class="eico-favorite"></i>
+                            <span>موارد دلخواه خود را در همه دستگاه‌ها ذخیره کنید.</span>
+                        </li>
+                        <li class="login-det-item">
+                            <i class="eico-fast-shop"></i>
+                            <span>برای سفارشات بعدی در زمان پرداخت صرفه‌جویی کنید.</span>
+                        </li>
+                        <li class="login-det-item">
+                            <i class="eico-loc-pack"></i>
+                            <span>خریدهای خود را در تایخچه سفارشات مدیریت کنید.</span>
+                        </li>
+                        <li class="login-det-item">
+                            <i class="eico-measure"></i>
+                            <span>امکان ذخیره سازی اطلاعات راهنمای هوشمند سایز در پروفایل.</span>
+                        </li>
+                        <li class="login-det-item">
+                            <i class="eico-star-empty"></i>
+                            <span>برای بهره‌مندی از پیشنهادات ویژه، عضو باشگاه مشتریان شوید. </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="login-get-otp d-none">
+
+                <div class="text-center">
+                    <h6 class="login-title d-inline-block">تائید شماره تلفن همراه!</d6>
+                </div>
+                
+                <label class="login-otp-label d-block text-center my-5">
+                    <span>کد تائید به شماره زیر ارسال شد. آن را وارد کنید</span>
+                    <input type="text" class="login-otp-input form-control my-3" placeholder="کد یکبار مصرف">
+                </label>
+
+                <p class="login-otp-phone">09123456789</p>
+    
+                <div class="d-grid mb-4">
+                    <button type="button" class="btn btn-primary login-otp-btn">ادامـه</button>
+                </div>
+
+                <div class="login-otp-resend">ارسال مجدد کد در<bdi>1:59</bdi>ثانیه دیگر</div>
+    
             </div>
             
-            <label class="login-phone-label d-block text-center my-5">
-                <span>لطفا برای ادامه شماره موبایل خود را وارد کنید.</span>
-                <input type="text" class="login-phone-input form-control my-3" placeholder="مثال: 09125873251">
-            </label>
-
-            <div class="d-grid mb-4">
-                <button type="button" class="btn btn-primary login-phone-btn">ادامـه</button>
-            </div>
-
-            <p class="login-policy text-center mb-5">با ورود یا ثبت نام در وبگاه رسمی ایکات، شما تمامی
-                <a href="#" target="_blank">قوانین و مقررات</a>
-                سامانه فروشگاهی پوشاک ایکات را می‌پذیرید.
-            </p>
-
-            <div class="login-det">
-                <h6 class="login-det-title">یک حساب کاربری ایجاد کنید.</h6>
-
-                <p class="login-det-text">یک حساب کاربری ایجاد کنید تا از تمام مزایای مشتریان ثبت نام شده ما بهره‌مند شوید.</p>
-
-                <ul class="login-det-list list-unstyled">
-                    <li class="login-det-item">
-                        <i class="eico-favorite"></i>
-                        <span>موارد دلخواه خود را در همه دستگاه‌ها ذخیره کنید.</span>
-                    </li>
-                    <li class="login-det-item">
-                        <i class="eico-fast-shop"></i>
-                        <span>برای سفارشات بعدی در زمان پرداخت صرفه‌جویی کنید.</span>
-                    </li>
-                    <li class="login-det-item">
-                        <i class="eico-loc-pack"></i>
-                        <span>خریدهای خود را در تایخچه سفارشات مدیریت کنید.</span>
-                    </li>
-                    <li class="login-det-item">
-                        <i class="eico-measure"></i>
-                        <span>امکان ذخیره سازی اطلاعات راهنمای هوشمند سایز در پروفایل.</span>
-                    </li>
-                    <li class="login-det-item">
-                        <i class="eico-star-empty"></i>
-                        <span>برای بهره‌مندی از پیشنهادات ویژه، عضو باشگاه مشتریان شوید. </span>
-                    </li>
-                </ul>
-            </div>
 
         </section>
 
