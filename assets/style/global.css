@@ -122,6 +122,28 @@
 .eico-close-circle:before { content: '\e825'; } /* '' */
 .eico-search:before { content: '\e826'; } /* '' */
 .eico-bag:before { content: '\e827'; } /* '' */
+.eico-arrow-up-1:before { content: '\e828'; } /* '' */
+.eico-bag-1:before { content: '\e829'; } /* '' */
+.eico-bag3:before { content: '\e82a'; } /* '' */
+.eico-chev-box-down:before { content: '\e82b'; } /* '' */
+.eico-close-square:before { content: '\e82c'; } /* '' */
+.eico-compare-1:before { content: '\e82d'; } /* '' */
+.eico-ecut:before { content: '\e82e'; } /* '' */
+.eico-ecut-fa:before { content: '\e82f'; } /* '' */
+.eico-fast-shop:before { content: '\e830'; } /* '' */
+.eico-loc-pack:before { content: '\e831'; } /* '' */
+.eico-login-1:before { content: '\e832'; } /* '' */
+.eico-login2:before { content: '\e833'; } /* '' */
+.eico-muasure:before { content: '\e834'; } /* '' */
+.eico-prev:before { content: '\e835'; } /* '' */
+.eico-ruler:before { content: '\e836'; } /* '' */
+.eico-search-2:before { content: '\e837'; } /* '' */
+.eico-search2:before { content: '\e838'; } /* '' */
+.eico-share-1:before { content: '\e839'; } /* '' */
+.eico-star-1:before { content: '\e83a'; } /* '' */
+.eico-user-1:before { content: '\e83b'; } /* '' */
+.eico-user-circle-1:before { content: '\e83c'; } /* '' */
+.eico-chev-left:before { content: '\e83d'; } /* '' */
 
 /* MARK: GENERAL */
 body {
@@ -239,12 +261,12 @@ picture {
 }
 
 /* MARK: SCROLL */
-::-webkit-scrollbar-track { background: var(--color-main) }
-::-webkit-scrollbar { width: 10px; height: 10px; background: var(--color-main) }
+::-webkit-scrollbar-track { background: #ccc }
+::-webkit-scrollbar { width: 10px; height: 10px; background: #ccc }
 ::-webkit-scrollbar-thumb { border-radius: 50px }
-::-webkit-scrollbar-thumb { border: 2px solid var(--color-main); background: var(--color-alt) }
+::-webkit-scrollbar-thumb { border: 2px solid #ccc; background: var(--color-main) }
 ::-webkit-scrollbar-thumb:hover { border-width: 0 }
-/* :root, * { scrollbar-width: thin; scrollbar-color: var(--color-alt) var(--color-main) } */
+/* :root, * { scrollbar-width: thin; scrollbar-color: var(--color-main) #ccc } */
 
 html {
 	-ms-scroll-snap-type: y mandatory;
