@@ -82,6 +82,7 @@
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+
 .eico-arrow-left:before { content: '\e800'; } /* '' */
 .eico-arrow-right:before { content: '\e801'; } /* '' */
 .eico-arrow-right-long:before { content: '\e802'; } /* '' */
@@ -134,13 +135,13 @@
 .eico-loc-pack:before { content: '\e831'; } /* '' */
 .eico-login-1:before { content: '\e832'; } /* '' */
 .eico-login2:before { content: '\e833'; } /* '' */
-.eico-muasure:before { content: '\e834'; } /* '' */
+.eico-measure:before { content: '\e834'; } /* '' */
 .eico-prev:before { content: '\e835'; } /* '' */
 .eico-ruler:before { content: '\e836'; } /* '' */
 .eico-search-2:before { content: '\e837'; } /* '' */
 .eico-search2:before { content: '\e838'; } /* '' */
 .eico-share-1:before { content: '\e839'; } /* '' */
-.eico-star-1:before { content: '\e83a'; } /* '' */
+.eico-star-empty:before { content: '\e83a'; } /* '' */
 .eico-user-1:before { content: '\e83b'; } /* '' */
 .eico-user-circle-1:before { content: '\e83c'; } /* '' */
 .eico-chev-left:before { content: '\e83d'; } /* '' */
