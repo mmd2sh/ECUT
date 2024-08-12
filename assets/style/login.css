@@ -5,6 +5,7 @@
 
 #LoginCanvas .offcanvas-header {
     height: var(--header-height);
+    min-height: var(--header-height);
     color: #fff;
     background: var(--color-main);
 }
@@ -15,12 +16,14 @@
 }
 
 #LoginCanvas .offcanvas-body {
-    padding: 23px 32px;
+    padding: 25px;
 }
 
 #LoginCanvas .login-close-btn {
+    display: inline-block;
     color: #777;
     font-size: 20px;
+    margin: 23px 32px 0 0;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
@@ -32,7 +35,7 @@
 }
 
 .login-wrap {
-    width: 410px;
+    width: 430px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -58,4 +61,47 @@
 
 .login-policy a {
     text-decoration: none;
+}
+
+.login-det-title {
+    color: #777;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.login-det-text {
+    color: #777;
+    text-align: center;
+}
+
+.login-det-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.login-det-item i {
+    width: 26px;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-det-item i.eico-star-empty {
+    font-size: 20px;
+}
+
+.login-det-item span {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #777;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#LoginCanvas .offcanvas-footer {
+    color: #777;
 }
