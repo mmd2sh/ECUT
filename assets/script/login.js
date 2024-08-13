@@ -1,8 +1,6 @@
 // ECUT Login Scripts by https://mohamad-sh.ir
 $(document).ready(function() {
 
-    let loading = $('.login-loading');
-    let otpWrap = $('.login-otp-wrap');
     let loginSubmit = $('.login-submit');
     let showPass = $('.login-show-pass');
     let otpResend = $('.login-otp-resend');
@@ -11,13 +9,24 @@ $(document).ready(function() {
     let passWrap = $('.login-password-wrap');
     let registerWrap = $('.form-container-4');
     let toPassBtn = $('.login-with-pass-btn');
-    let otpInput = $('.login-otp-input');
     let changePhoneBtn = $('.login-otp-change-phone');
-    let otpSegmentInputs = $('.login-otp-segment-inputs input');
-
+    
+    let loading = $('.login-loading');
+    let otpWrap = $('.login-get-otp');
     let phoneInput = $('.login-phone-input'); 
+    let otpInput = $('.login-otp-input');
+    let otpResendBtn = $('.login-otp-resend-btn');
+    let otpResendText = $('.login-otp-resend-text');
     let phoneNextBtn = $('.login-phone-btn'); 
     let otpNextBtn = $('.login-otp-btn'); 
+    let otpPhone = $('.login-otp-phone');
+    let otpSegmentInputs = $('.login-otp-segment-inputs input');
+
+    $('.header-login-btn').on('click', function() {
+        setTimeout(function() {
+            phoneInput.focus();
+        }, 500);
+    });
 
     // MARK: PHONE NEXT CLICK
     phoneNextBtn.on('click', function() {
@@ -26,14 +35,21 @@ $(document).ready(function() {
             loading.fadeIn();
 
             setTimeout(function() {
+
                 loading.fadeOut();
+                $('.login-get-phone').slideUp();
+                $('.login-get-otp').removeClass('d-none').slideDown();
+
+                otpPhone.text(phoneInput.val());
+
+                otpResendTimer();
+                
+                otpSegmentInputs.first().focus();
+                phoneInput.addClass('is-valid');
+                phoneInput.removeClass('is-invalid');
+
             }, 2000);
 
-            $('.login-get-phone').slideUp();
-            $('.login-get-otp').removeClass('d-none').slideDown();
-            otpSegmentInputs.first().focus();
-            phoneInput.addClass('is-valid');
-            phoneInput.removeClass('is-invalid');
         } else {
             phoneInput.addClass('is-invalid');
             phoneInput.removeClass('is-valid');
@@ -139,8 +155,38 @@ $(document).ready(function() {
         otpInput.change();
     }); // otp segment ens
 
-    otpNextBtn.on('click', function() {
-        
-    });
+    // otp resend timer
+    function otpResendTimer() {
+        let ticker;
+        let timeInSecs = 2 * 60;
+        ticker = setInterval(function() {
+            let secs = timeInSecs;
 
+            if (secs > 0) {
+                timeInSecs--;
+            }
+
+            let mins = Math.floor(secs/60);
+            secs %= 60;
+            let pretty = ( (mins < 10) ? "0" : "" ) + mins + ":" + ( (secs < 10) ? "0" : "" ) + secs;
+            $('.login-otp-resend-counter').text(pretty);
+
+            if (mins <= 0 && secs <= 0){
+                otpResendText.hide();
+                otpResendBtn.show();
+
+                clearInterval(ticker);
+            }
+        }, 1000);
+    };
+    
+    otpResendBtn.on('click', function() {
+        $(this).hide();
+        otpResendText.show();
+        otpResendTimer();
+    });
+    
+    otpNextBtn.on('click', function() {
+        otpWrap.hide();
+    });
 });
