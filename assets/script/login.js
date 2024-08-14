@@ -1,17 +1,8 @@
 // ECUT Login Scripts by https://mohamad-sh.ir
 $(document).ready(function() {
-
-    let loginSubmit = $('.login-submit');
-    let showPass = $('.login-show-pass');
-    let otpResend = $('.login-otp-resend');
-    let toOtpBtn = $('.login-with-otp-btn');
-    let mobileWrap = $('.login-mobile-wrap');
-    let passWrap = $('.login-password-wrap');
-    let registerWrap = $('.form-container-4');
-    let toPassBtn = $('.login-with-pass-btn');
-    let changePhoneBtn = $('.login-otp-change-phone');
     
     let loading = $('.login-loading');
+    let phoneWrap = $('.login-get-phone');
     let otpWrap = $('.login-get-otp');
     let phoneInput = $('.login-phone-input'); 
     let otpInput = $('.login-otp-input');
@@ -21,6 +12,7 @@ $(document).ready(function() {
     let otpNextBtn = $('.login-otp-btn'); 
     let otpPhone = $('.login-otp-phone');
     let otpSegmentInputs = $('.login-otp-segment-inputs input');
+    let successWrap = $('.login-success-wrap')
 
     $('.header-login-btn').on('click', function() {
         setTimeout(function() {
@@ -37,7 +29,7 @@ $(document).ready(function() {
             setTimeout(function() {
 
                 loading.fadeOut();
-                $('.login-get-phone').slideUp();
+                phoneWrap.slideUp();
                 $('.login-get-otp').removeClass('d-none').slideDown();
 
                 otpPhone.text(phoneInput.val());
@@ -53,6 +45,7 @@ $(document).ready(function() {
         } else {
             phoneInput.addClass('is-invalid');
             phoneInput.removeClass('is-valid');
+            phoneInput.focus();
         }
     });
 
@@ -75,14 +68,6 @@ $(document).ready(function() {
                 $(this).removeClass('is-valid');
             }
         }
-    });
-
-    showPass.on('click', function(ev) {
-        ev.preventDefault();
-        $(this).toggleClass('active');
-        $('input', passWrap).attr('type', function(_, type) {
-            return type == 'text' ? 'password' : 'text';
-        });
     });
 
     // otp segmented inputs
@@ -155,6 +140,12 @@ $(document).ready(function() {
         otpInput.change();
     }); // otp segment ens
 
+    $('.login-change-phone-btn').on('click', function() {
+        otpWrap.slideUp();
+        phoneWrap.slideDown();
+        phoneInput.focus();
+    });
+
     // otp resend timer
     function otpResendTimer() {
         let ticker;
@@ -185,8 +176,21 @@ $(document).ready(function() {
         otpResendText.show();
         otpResendTimer();
     });
-    
+
     otpNextBtn.on('click', function() {
-        otpWrap.hide();
+
+        let filterEmpty = otpSegmentInputs.filter((_, e) => e.value.trim() == '');
+
+        if (filterEmpty.length > 0) {
+            filterEmpty.addClass('is-invalid');
+        } else {
+            otpSegmentInputs.removeClass('is-invalid');
+            otpWrap.slideUp();
+            successWrap.slideDown();
+
+            $('#LoginCanvas .offcanvas-title').hide();
+            $('.offcanvas-success-title').show();
+        }
+        
     });
 });

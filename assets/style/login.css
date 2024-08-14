@@ -1,4 +1,5 @@
 /* ECUT Login Style by https://mohamad-sh.ir */
+/* MARK: LOGIN CANVAS */
 #LoginCanvas {
     width: 518px;
     color: #777;
@@ -59,6 +60,7 @@ input:not(:active) {
     display: block;
 }
 
+/* MARK: LOGIN DETAILS */
 .login-policy {
     font-size: 16px;
     font-style: normal;
@@ -106,6 +108,7 @@ input:not(:active) {
     font-weight: 400;
 }
 
+/* MARK: LOGIN OTP */
 .login-otp-label {
     text-align: center;
 }
@@ -121,6 +124,8 @@ input:not(:active) {
 
 .login-otp-segment-inputs input {
     text-align: center;
+    padding: 6px 10px !important;
+    background: #fff !important;
 }
 
 .login-change-phone-btn {
@@ -135,4 +140,17 @@ input:not(:active) {
 .login-otp-resend-btn {
     color: var(--color-main);
     text-decoration: none;
+}
+
+/* MARK: LOGIN SUCCESS */
+.login-avatar-fig img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.login-success-wrap .login-title {
+    border: 0;
 }

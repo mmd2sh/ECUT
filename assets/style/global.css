@@ -225,6 +225,8 @@ picture {
 }
 
 .form-control:focus,
+.form-check-input:focus,
+.form-check-input:active,
 .btn-primary:active,
 .btn-primary:focus-visible,
 .btn-primary:first-child:active {
@@ -245,6 +247,22 @@ picture {
 .btn-primary:first-child:active {
 	background: var(--color-alt);
 	border-color: var(--color-alt);
+}
+
+.form-check-input {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.form-check-input:checked {
+	border-color: var(--color-alt);
+	background-color: var(--color-alt);
+}
+
+label:has(input) {
+	cursor: pointer;
+	user-select: none;
 }
 
 /* MARK: VARIABLES */
