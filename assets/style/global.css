@@ -227,6 +227,8 @@ picture {
 .form-control:focus,
 .form-check-input:focus,
 .form-check-input:active,
+.form-select:focus,
+.form-select:active,
 .btn-primary:active,
 .btn-primary:focus-visible,
 .btn-primary:first-child:active {

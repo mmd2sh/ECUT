@@ -193,4 +193,12 @@ $(document).ready(function() {
         }
         
     });
+
+    $('.login-go-details-btn').on('click', function() {
+        successWrap.slideUp();
+        $('.login-details-form').slideDown();
+
+        $('#LoginCanvas .offcanvas-title').hide();
+        $('.offcanvas-details-form-title').show();
+    });
 });

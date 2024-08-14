@@ -6,7 +6,9 @@
 }
 
 input:not(:focus),
-input:not(:active) {
+input:not(:active),
+select:not(:focus),
+select:not(:active){
     border-color: #777;
 }
 
@@ -153,4 +155,8 @@ input:not(:active) {
 
 .login-success-wrap .login-title {
     border: 0;
+}
+
+.login-agreements a {
+    text-decoration: none;
 }

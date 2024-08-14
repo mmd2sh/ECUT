@@ -9,6 +9,9 @@
         <h5 class="offcanvas-title offcanvas-success-title collapse">
             سامانه فروشگاهی پوشاک ایکات
         </h5>
+        <h5 class="offcanvas-title offcanvas-details-form-title collapse">
+            <i class="fa-solid fa-user fa-xl"></i> ثبت نام
+        </h5>
     </header>
 
     <!-- MARK: LOADING -->
@@ -139,7 +142,146 @@
                 </div>
 
                 <div class="d-grid my-4">
-                    <button type="button" class="btn btn-primary login-go-home-btn">صفحه اصلی</button>
+                    <a href="/" class="btn btn-primary login-go-home-btn">صفحه اصلی</a>
+                    
+                    <label class="newsletter-signin-label d-flex align-items-center mt-4 gap-2">
+                        <input type="checkbox" class="newsletter-signin-checkbox form-check-input m-0">
+                        <span>تمایل به دریافت خبرنـامه از طریق ایمیل دارم.</span>
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- MARK: LOGIN USER DETAILS FORM -->
+            <div class="login-details-form collapse">
+                
+                <div class="text-center">
+                    <h6 class="login-title">مشخصات خود را وارد نمائید.</d6>
+                </div>
+
+                <ul class="login-user-deatils-form row list-unstyled my-5">
+
+                    <li class="col-6">
+                        <label class="d-block mb-4">
+                            <div class="mb-2">نام</div>
+                            <input type="text" class="form-control">
+                        </label>
+                    </li>
+
+                    <li class="col-6">
+                        <label class="d-block mb-4">
+                            <div class="mb-2">نام خانوادگی</div>
+                            <input type="text" class="form-control">
+                        </label>
+                    </li>
+
+                    <li class="col-6">
+                        <label class="d-block mb-4">
+                            <div class="mb-2">استان</div>
+                            <select class="form-select">
+                                <option selected disabled></option>
+                                <option>آذربایجان شرقی</option>
+                                <option>آذربایجان غربی</option>
+                                <option>اردبیل</option>
+                                <option>اصفهان</option>
+                                <option>البرز</option>
+                                <option>ایلام</option>
+                                <option>بوشهر</option>
+                                <option>تهران</option>
+                                <option>چهارمحال و بختیاری</option>
+                                <option>خراسان جنوبی</option>
+                                <option>خراسان رضوی</option>
+                                <option>خراسان شمالی</option>
+                                <option>خوزستان</option>
+                                <option>زنجان</option>
+                                <option>سمنان</option>
+                                <option>سیستان و بلوچستان</option>
+                                <option>فارس</option>
+                                <option>قزوین</option>
+                                <option>قم</option>
+                                <option>کردستان</option>
+                                <option>کرمان</option>
+                                <option>کرمانشاه</option>
+                                <option>کهگیلویه و بویراحمد</option>
+                                <option>گلستان</option>
+                                <option>گیلان</option>
+                                <option>لرستان</option>
+                                <option>مازندران</option>
+                                <option>مرکزی</option>
+                                <option>هرمزگان</option>
+                                <option>همدان</option>
+                                <option>یزد</option>
+                            </select>
+                        </label>
+                    </li>
+
+                    <li class="col-6">
+                        <label class="d-block mb-4">
+                            <div class="mb-2">شهر</div>
+                            <select class="form-select">
+                                <option selected disabled></option>
+                                <option>آذربایجان شرقی</option>
+                                <option>آذربایجان غربی</option>
+                                <option>اردبیل</option>
+                                <option>اصفهان</option>
+                                <option>البرز</option>
+                                <option>ایلام</option>
+                                <option>بوشهر</option>
+                                <option>تهران</option>
+                                <option>چهارمحال و بختیاری</option>
+                                <option>خراسان جنوبی</option>
+                                <option>خراسان رضوی</option>
+                                <option>خراسان شمالی</option>
+                                <option>خوزستان</option>
+                                <option>زنجان</option>
+                                <option>سمنان</option>
+                                <option>سیستان و بلوچستان</option>
+                                <option>فارس</option>
+                                <option>قزوین</option>
+                                <option>قم</option>
+                                <option>کردستان</option>
+                                <option>کرمان</option>
+                                <option>کرمانشاه</option>
+                                <option>کهگیلویه و بویراحمد</option>
+                                <option>گلستان</option>
+                                <option>گیلان</option>
+                                <option>لرستان</option>
+                                <option>مازندران</option>
+                                <option>مرکزی</option>
+                                <option>هرمزگان</option>
+                                <option>همدان</option>
+                                <option>یزد</option>
+                            </select>
+                        </label>
+                    </li>
+
+                    <li class="col-6">
+                        <label class="d-block mb-4">
+                            <div class="mb-2">پسورد</div>
+                            <input type="password" class="form-control">
+                        </label>
+                    </li>
+
+                    <li class="col-6">
+                        <label class="d-block mb-4">
+                            <div class="mb-2">تکرار رمز عبور</div>
+                            <input type="password" class="form-control">
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="d-grid my-4">
+                    <label class="login-agreements d-flex align-items-center mt-4 gap-2">
+                        <input type="checkbox" class="form-check-input m-0">
+                        <span>
+                            <a href="#" target="_blank">شرایط و قوانین</a> و <a href="#" target="_blank">حریم خصوصی</a>
+                            ســامانه فـــــروشگاهی پوشاک ایکات را می‌پذیرم.
+                        </span>
+                    </label>
+
+                    <div class="d-grid mt-5 mb-3">
+                        <button type="button" class="btn btn-primary login-register-btn">ثبت نام</button>
+                    </div>
                     
                     <label class="newsletter-signin-label d-flex align-items-center mt-4 gap-2">
                         <input type="checkbox" class="newsletter-signin-checkbox form-check-input m-0">
