@@ -1,3 +1,3 @@
-ECUT Template.
+# ECUT Website.
 
-Use IDE LiveServer or actual server.
+<a href="https://mmd2sh.github.io/ecut/" target="_blank">View ECUT Template</a>
